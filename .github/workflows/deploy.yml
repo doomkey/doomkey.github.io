@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ['main']
+
   workflow_dispatch:
 
 permissions:
@@ -25,19 +26,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
-      - name: ⬇️ Install pnpm
-        run: npm install -g pnpm
-      - name: 🛠️ Install Dependencies (Now uses pnpm)
-        run: pnpm install
+          cache: 'npm'
+
+      - name: 🛠️ Install Dependencies (npm)
+
+        run: npm install
 
       - name: 📄 Setup Pages
         uses: actions/configure-pages@v4
         with:
           static_site_generator: 'sveltekit'
 
-      - name: 🔨 Build Site (No BASE_PATH needed)
+      - name: 🔨 Build Site (npm)
+
         run: npm run build
 
       - name: 📤 Upload Artifact
