@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stack+Sans+Headline:wght@200..700&display=swap');
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+:root {
+	--font-main: 'JetBrains Mono', monospace;
+	--font-heading: 'Stack Sans Headline', sans-serif;
+	--color-bg: rgb(253, 231, 244);
+	--color-bg-alt: #f9e960;
+	--color-text: rgb(116, 9, 229);
+	--color-text-alt: #3b2159;
+	--color-accent: #f12428;
+
+	--width-section: 960px;
+
+	--display-lg-size: 2.1148rem;
+	--display-lg-weight: 800;
+	--display-lg-line-height: 1.55;
+	--display-lg-letter-spacing: 0.02em;
+
+	--display-md-size: 1.6548rem;
+	--display-md-weight: 800;
+	--display-md-line-height: 1.55;
+	--display-md-letter-spacing: 0.02em;
+
+	--h1-size: 1.5127rem;
+	--h1-weight: 700;
+	--h1-line-height: 1.55;
+	--h1-letter-spacing: 0.02em;
+
+	--h2-size: 1.26rem;
+	--h2-weight: 600;
+	--h2-line-height: 1.6;
+	--h2-letter-spacing: 0.025em;
+
+	--h3-size: 1.15rem;
+	--h3-weight: 600;
+	--h3-line-height: 1.6;
+	--h3-letter-spacing: 0.025em;
+
+	--h4-size: 1.05rem;
+	--h4-weight: 500;
+	--h4-line-height: 1.6;
+	--h4-letter-spacing: 0.03em;
+
+	--h5-size: 1.0026rem;
+	--h5-weight: 500;
+	--h5-line-height: 1.6;
+	--h5-letter-spacing: 0.03em;
+
+	--h6-size: 0.9589rem;
+	--h6-weight: 500;
+	--h6-line-height: 1.6;
+	--h6-letter-spacing: 0.03em;
+
+	--body-xl-size: 0.9148rem;
+	--body-xl-weight: 400;
+	--body-xl-line-height: 1.6;
+	--body-xl-letter-spacing: 0.03em;
+
+	--body-size: 0.875rem;
+	--body-weight: 400;
+	--body-line-height: 1.6;
+	--body-letter-spacing: 0.03em;
+
+	--body-sm-size: 0.8368rem;
+	--body-sm-weight: 400;
+	--body-sm-line-height: 1.65;
+	--body-sm-letter-spacing: 0.03em;
+
+	--caption-lg-size: 0.7997rem;
+	--caption-lg-weight: 400;
+	--caption-lg-line-height: 1.65;
+	--caption-lg-letter-spacing: 0.03em;
+
+	--caption-size: 0.7638rem;
+	--caption-weight: 400;
+	--caption-line-height: 1.65;
+	--caption-letter-spacing: 0.03em;
+
+	--caption-sm-size: 0.7303rem;
+	--caption-sm-weight: 300;
+	--caption-sm-line-height: 1.65;
+	--caption-sm-letter-spacing: 0.03em;
+
+	--overline-size: 0.6974rem;
+	--overline-weight: 500;
+	--overline-line-height: 1.65;
+	--overline-letter-spacing: 0.03em;
+}
+body {
+	font-size: var(--body-size);
+	font-family: var(--font-main);
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	min-height: 100vh;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color-text-alt);
+	font-family: var(--font-heading);
+}
+
+h1 {
+	font-size: var(--h1-size);
+	font-weight: var(--h1-weight);
+	line-height: var(--h1-line-height);
+	letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+	font-size: var(--h2-size);
+	font-weight: var(--h2-weight);
+	line-height: var(--h2-line-height);
+	letter-spacing: var(--h2-letter-spacing);
+}
+h3 {
+	font-size: var(--h3-size);
+	font-weight: var(--h3-weight);
+	line-height: var(--h3-line-height);
+	letter-spacing: var(--h3-letter-spacing);
+}
+p {
+	font-size: var(--body-size);
+	font-weight: var(--body-weight);
+
+	line-height: var(--body-line-height);
+	letter-spacing: var(--body-letter-spacing);
+	color: var(--color-text);
+}
+ol,
+ul {
+	margin-bottom: 1rem;
+}
+
+section > * {
+	max-width: var(--width-section);
+	margin: 0 auto;
+	padding-inline: min(20px, 8%);
+}
+button,
+[role='button'] {
+	padding: 0.5rem 1rem;
+	background-color: var(--color-text-alt);
+	color: var(--color-bg);
+	border-radius: 8px;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	&.primary {
+		background-color: var(--color-accent);
+		color: var(--color-bg-alt);
+	}
+	&.outline {
+		color: var(--color-text);
+		border: 1px solid var(--color-text);
+		background-color: transparent;
+	}
+	&:hover {
+		opacity: 0.8;
+		border-radius: 16px;
+	}
+}
+
+/* utilites */
+
+.font-monospace {
+	font-family: 'JetBrains Mono', monospace;
+}
+.color-accent {
+	color: var(--color-accent);
+}
+.flex {
+	display: flex;
+}
+.flex-col {
+	flex-direction: column;
+}
+.flex-row {
+	flex-direction: row;
+}
+.justify-between {
+	justify-content: space-between;
+}
+
+/* media queries */
+
+@media screen and (min-width: 786px) {
+	:root {
+		/* Type Scale */
+		--display-lg-size: 3.0737rem;
+		--display-lg-weight: 800;
+		--display-lg-line-height: 3;
+		--display-lg-letter-spacing: 0.02em;
+
+		--display-md-size: 1.8931rem;
+		--display-md-weight: 800;
+		--display-md-line-height: 1.55;
+		--display-md-letter-spacing: 0.02em;
+
+		--h1-size: 1.7281rem;
+		--h1-weight: 700;
+		--h1-line-height: 1.55;
+		--h1-letter-spacing: 0.02em;
+
+		--h2-size: 1.44rem;
+		--h2-weight: 600;
+		--h2-line-height: 1.6;
+		--h2-letter-spacing: 0.025em;
+
+		--h3-size: 1.3144rem;
+		--h3-weight: 600;
+		--h3-line-height: 1.6;
+		--h3-letter-spacing: 0.025em;
+
+		--h4-size: 1.2rem;
+		--h4-weight: 500;
+		--h4-line-height: 1.6;
+		--h4-letter-spacing: 0.03em;
+
+		--h5-size: 1.1462rem;
+		--h5-weight: 500;
+		--h5-line-height: 1.6;
+		--h5-letter-spacing: 0.03em;
+
+		--h6-size: 1.0956rem;
+		--h6-weight: 500;
+		--h6-line-height: 1.6;
+		--h6-letter-spacing: 0.03em;
+
+		--body-xl-size: 1.0469rem;
+		--body-xl-weight: 400;
+		--body-xl-line-height: 1.6;
+		--body-xl-letter-spacing: 0.03em;
+
+		--body-size: 1rem;
+		--body-weight: 400;
+		--body-line-height: 1.6;
+		--body-letter-spacing: 0.03em;
+
+		--body-sm-size: 0.9556rem;
+		--body-sm-weight: 400;
+		--body-sm-line-height: 1.65;
+		--body-sm-letter-spacing: 0.03em;
+
+		--caption-lg-size: 0.9131rem;
+		--caption-lg-weight: 400;
+		--caption-lg-line-height: 1.65;
+		--caption-lg-letter-spacing: 0.03em;
+
+		--caption-size: 0.8725rem;
+		--caption-weight: 400;
+		--caption-line-height: 1.65;
+		--caption-letter-spacing: 0.03em;
+
+		--caption-sm-size: 0.8331rem;
+		--caption-sm-weight: 300;
+		--caption-sm-line-height: 1.65;
+		--caption-sm-letter-spacing: 0.03em;
+
+		--overline-size: 0.7963rem;
+		--overline-weight: 500;
+		--overline-line-height: 1.65;
+		--overline-letter-spacing: 0.03em;
+	}
+}
