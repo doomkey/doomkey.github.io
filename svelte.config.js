@@ -16,7 +16,8 @@ const config = {
 		}),
 		paths: {
 			base: ''
-		}
+		},
+		prerender: { handleHttpError: 'warn', handleMissingId: 'warn' }
 	},
 	extensions: ['.svelte', '.svx']
 };
