@@ -15,8 +15,9 @@
 				<span class="font-monospace color-accent"> Scale. </span>
 			</h1>
 			<p>We build high-performance apps with care. The apps which are loved by the users.</p>
-			<button class="primary">Projects</button>
-			<button class="outline">About Us</button>
+			<p class="text-black! italic">Scroll down to see our projects.</p>
+			<!-- <button class="primary">Projects</button> -->
+			<!-- <button class="outline">About Us</button> -->
 		</div>
 	</section>
 </div>

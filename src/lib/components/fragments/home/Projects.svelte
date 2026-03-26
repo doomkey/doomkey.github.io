@@ -2,7 +2,51 @@
 	import ThumbImgO from '$lib/assets/images/ovidhan/thumb.png';
 	import ThumbImgK from '$lib/assets/images/korbotaki/thumb.png';
 	import ThumbImgS from '$lib/assets/images/sas/thumb.png';
+	import ThumbImgE from '$lib/assets/images/epitome/thumb.png';
 </script>
+
+<section id="epitome">
+	<div>
+		<article class="project">
+			<h1>Epitome</h1>
+			<div class="flex justify-between">
+				<div>
+					<p>
+						A free, feature-packed resume builder <br />
+					</p>
+					<a
+						href="https://doomkey.github.io/epitome"
+						role="button"
+						target="_blank"
+						rel="noreferrer"
+						style="color: var(--color-text) !important">Generate Resume</a
+					>
+					<a
+						href="https://github.com/doomkey/Epitome"
+						role="button"
+						target="_blank"
+						rel="noreferrer"
+						class="bg-transparent! outline-1"
+						style="color: var(--color-text) !important">Visit Repo</a
+					>
+				</div>
+				<div>
+					<h2>Features</h2>
+					<ol>
+						<li>Workspaces.</li>
+						<li>Templates.</li>
+						<li>Comprehensive data management.</li>
+						<li>Everything is done inside your browser.</li>
+						<li>Totally free, and much more.</li>
+					</ol>
+				</div>
+			</div>
+			<div class="flex">
+				<img src={ThumbImgE} alt="" />
+			</div>
+		</article>
+	</div>
+</section>
 
 <section id="ovidhan">
 	<div>
@@ -144,13 +188,19 @@
 			max-width: 30ch;
 		}
 	}
+	#epitome {
+		--color-surface: #f7f9fa;
+		--color-text: #333333;
+		--color-primary: #f297b6;
+		--color-accent: #ffff00;
+		z-index: 99;
+		isolation: isolate;
+	}
 	#ovidhan {
 		--color-surface: #eaffe8;
 		--color-text: #111;
 		--color-primary: #705676;
 		--color-accent: #0b6f00;
-		z-index: 99;
-		isolation: isolate;
 	}
 	#korbotaki {
 		--color-surface: #fff8f6;
