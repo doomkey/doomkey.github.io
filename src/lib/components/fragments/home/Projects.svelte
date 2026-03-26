@@ -14,13 +14,13 @@
 					<p>
 						A free, feature-packed resume builder <br />
 					</p>
-					<a
+					<!-- <a
 						href="https://doomkey.github.io/epitome"
 						role="button"
 						target="_blank"
 						rel="noreferrer"
 						style="color: var(--color-text) !important">Generate Resume</a
-					>
+					> -->
 					<a
 						href="https://github.com/doomkey/epitome"
 						role="button"
