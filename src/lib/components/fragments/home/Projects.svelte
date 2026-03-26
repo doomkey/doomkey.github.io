@@ -22,7 +22,7 @@
 						style="color: var(--color-text) !important">Generate Resume</a
 					>
 					<a
-						href="https://github.com/doomkey/Epitome"
+						href="https://github.com/doomkey/epitome"
 						role="button"
 						target="_blank"
 						rel="noreferrer"
