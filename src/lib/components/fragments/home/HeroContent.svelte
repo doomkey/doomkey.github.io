@@ -10,7 +10,7 @@
 				Built to
 				<span class="font-monospace"> Outperform. </span>
 			</h1> -->
-			<h1 style="margin-bottom: 2rem">We make apps that</h1>
+			<h1 style="margin-bottom: 2rem">We provide apps and services that</h1>
 
 			<div class="scale-marquee" aria-hidden="true">
 				<div class="scale-marquee-track">
@@ -64,7 +64,7 @@
 
 	.scale-marquee {
 		position: absolute;
-		bottom: -1.8em;
+		bottom: 3rem;
 		left: 50%;
 		width: 160vw;
 		transform: translateX(-50%) rotate(-8deg);
@@ -72,10 +72,7 @@
 		overflow: hidden;
 		z-index: -1;
 		pointer-events: none;
-	}
-	.scale-marquee--bottom {
-		bottom: -4.5rem;
-		top: auto;
+		font-size: 5rem !important;
 	}
 
 	.scale-marquee-track {
@@ -83,15 +80,19 @@
 		white-space: nowrap;
 		width: max-content;
 		animation: scroll-x 16s linear infinite;
-		font-size: var(--display-lg-size);
 		font-weight: 900;
 		color: var(--color-accent);
 	}
 	.scale-marquee-track span {
 		padding-right: 2rem;
 	}
+	.scale-marquee--bottom {
+		bottom: -12.5rem;
+		top: auto;
+		font-size: 15rem !important;
+	}
 	.scale-marquee-track--reverse {
-		animation: scroll-x-reverse 16s linear infinite;
+		animation: scroll-x-reverse 36s linear infinite;
 	}
 	@keyframes scroll-x {
 		from {
