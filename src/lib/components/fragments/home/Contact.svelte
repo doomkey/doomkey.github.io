@@ -1,4 +1,4 @@
-<section class="flex flex-col">
+<section class="flex flex-col" id="contact">
 	<h1>Contact Us</h1>
 	<a
 		class="primary"
