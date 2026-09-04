@@ -4,7 +4,18 @@ export const prerender = true;
 
 const SITE = 'https://doomkeybd.com';
 
-// Static pages with no frontmatter date: lastmod = build day (UTC).
+// Static pages: derived from route files, so new pages are listed automatically.
+// Param routes ([slug], [tag]) and endpoints (+server.ts) are excluded here —
+// posts and tags come from frontmatter below with real dates.
+const pageModules = import.meta.glob('/src/routes/**/+page.svelte', { eager: true });
+
+function pathToUrl(path: string): string | null {
+	// /src/routes/demo/+page.svelte -> /demo ; skip param segments like [slug]
+	const rel = path.replace(/^\/src\/routes/, '').replace(/\/\+page\.svelte$/, '') || '/';
+	if (rel.split('/').some((seg) => seg.startsWith('['))) return null;
+	return rel;
+}
+
 function today(): string {
 	return new Date().toISOString().slice(0, 10);
 }
@@ -15,9 +26,12 @@ function url(loc: string, lastmod: string): string {
 
 export function GET() {
 	const day = today();
-	const staticUrls = ['/', '/email-service', '/blog', '/blog/tag', '/demo', '/demo/paraglide'].map(
-		(loc) => url(loc, day)
-	);
+	// Static pages: lastmod = build day (no frontmatter date available).
+	const staticUrls = Object.keys(pageModules)
+		.map(pathToUrl)
+		.filter((loc): loc is string => loc !== null)
+		.sort()
+		.map((loc) => url(loc, day));
 	const postUrls = listPosts().map((post) =>
 		url(`/blog/${post.slug}`, post.updated ?? post.date)
 	);
