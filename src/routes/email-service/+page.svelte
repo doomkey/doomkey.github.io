@@ -84,7 +84,6 @@
 	</section>
 
 	<section id="how-it-works">
-<section>
 		<div class="border-t py-12">
 			<h2 class="mb-6">How it works</h2>
 			<ol class="m-0 grid list-none gap-6 p-0 sm:grid-cols-3">

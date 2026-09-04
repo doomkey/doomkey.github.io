@@ -55,6 +55,11 @@
 			</p>
 			<ul class="m-0 flex list-none flex-col gap-2 p-0">
 				<li>
+					<a href={resolve('/about')} class="no-underline hover:underline hover:underline-offset-4"
+						>About</a
+					>
+				</li>
+				<li>
 					<a href={resolve('/blog')} class="no-underline hover:underline hover:underline-offset-4"
 						>Blog</a
 					>
