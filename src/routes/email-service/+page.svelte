@@ -18,7 +18,7 @@
 			<h1>A Gmail address makes a real business look unfinished.</h1>
 			<p>
 				An @gmail.com address reads like a side project. An address on your own domain reads like a
-				real company. You already own the domain — we just move your email onto it.
+				real company. Already own the domain? We move your email onto it.
 			</p>
 			<div class="mt-2">
 				<a href="#get-started" role="button" class="primary">Set up my business email</a>
@@ -31,12 +31,12 @@
 			<h2 class="mb-6">Why this matters</h2>
 			<div class="grid gap-8 md:grid-cols-2">
 				<p>
-					Customers hesitate to trust an order confirmation, invoice, or reply from a personal Gmail
-					address instead of your own domain.
+					Customers hesitate over order confirmations, invoices, and replies sent from a personal
+					Gmail address. Your own domain removes that doubt before they even read the message.
 				</p>
 				<p>
-					Business verification, payment gateways, and marketplace approvals often require a
-					business email. A branded address signals you're an established company, not a side
+					Verification forms, payment gateways, marketplace approvals. They ask for a business
+					email, and Gmail gets rejected. A branded address says established company, not side
 					project.
 				</p>
 			</div>
@@ -49,19 +49,19 @@
 			<div class="grid gap-6 sm:grid-cols-2">
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
 					<h3>Already have a domain?</h3>
-					<p>We set up professional email on it — for example, hello@yourbusiness.com.</p>
+					<p>We set up professional email on it. Think hello@yourbusiness.com, live within a day.</p>
 				</div>
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
 					<h3>No domain yet?</h3>
-					<p>We help you get one and set it up from scratch.</p>
+					<p>We help you pick one and set it up from scratch. One less thing to figure out.</p>
 				</div>
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
 					<h3>No website either?</h3>
-					<p>We help you get a simple one built too.</p>
+					<p>We get you a simple one too. Same deal: handled for you, no technical maze.</p>
 				</div>
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
 					<h3>Nothing technical</h3>
-					<p>We hand over full access — inbox, mobile app, everything ready to go.</p>
+					<p>Full access handed over. Inbox, mobile app, everything ready to go.</p>
 				</div>
 			</div>
 		</div>
@@ -73,15 +73,15 @@
 			<ol class="m-0 grid list-none gap-6 p-0 sm:grid-cols-3">
 				<li class="flex flex-col gap-2">
 					<span class="flex h-8 w-8 items-center justify-center rounded-full border">1</span>
-					<p>Tell us your domain (or let us help you pick one).</p>
+					<p>Tell us your domain. Don't have one? We help you pick it.</p>
 				</li>
 				<li class="flex flex-col gap-2">
 					<span class="flex h-8 w-8 items-center justify-center rounded-full border">2</span>
-					<p>We configure your business email on that domain.</p>
+					<p>We configure business email on that domain. You touch nothing.</p>
 				</li>
 				<li class="flex flex-col gap-2">
 					<span class="flex h-8 w-8 items-center justify-center rounded-full border">3</span>
-					<p>We hand over full access — set up and sending within a day.</p>
+					<p>Full access handed over. Sending within a day.</p>
 				</li>
 			</ol>
 		</div>
@@ -92,7 +92,7 @@
 			<h2 class="mb-6">What you get</h2>
 			<ul class="m-0 flex list-none flex-col gap-3 p-0">
 				<li class="flex items-start gap-2">
-					<span>✓</span><span>The domain you already own, put to full use</span>
+					<span>✓</span><span>The domain you already own, finally put to full use</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span>✓</span><span>Set up and sending within a day</span>
@@ -102,7 +102,7 @@
 				</li>
 				<li class="flex items-start gap-2"><span>✓</span><span>Full access handed to you</span></li>
 				<li class="flex items-start gap-2">
-					<span>✓</span><span>Works with the tools you already use — inbox, mobile app, etc.</span>
+					<span>✓</span><span>Works where you already work. Inbox, mobile app, calendar.</span>
 				</li>
 			</ul>
 		</div>
@@ -114,15 +114,15 @@
 			<ul class="m-0 flex list-none flex-col gap-3 p-0">
 				<li class="flex items-start gap-2">
 					<span>—</span><span
-						>Businesses with a website and domain, still using Gmail for customer-facing email</span
+						>Have a website and domain, but still email customers from Gmail</span
 					>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>—</span><span>Businesses with a Facebook page or storefront but no domain yet</span>
+					<span>—</span><span>Run on a Facebook page or storefront with no domain yet</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span>—</span><span
-						>Businesses that need a professional email for verification, outreach, or partnerships</span
+						>Need a professional address for verification, outreach, or partnerships</span
 					>
 				</li>
 			</ul>
@@ -132,7 +132,7 @@
 	<section id="get-started">
 		<div class="flex flex-col items-start gap-4 border-t py-16">
 			<h2>Get started</h2>
-			<p>Set up and sending within a day. Nothing technical required on your end.</p>
+			<p>Sending within a day. Nothing technical on your end. Tell us your domain and we take it from there.</p>
 			<a href="#" role="button" class="primary">Set up my business email</a>
 		</div>
 	</section>

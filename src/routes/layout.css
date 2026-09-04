@@ -110,7 +110,10 @@ body {
 	background-color: var(--color-bg);
 	min-height: 100vh;
 	/*margin: 0;*/
-	overflow-x: hidden;
+	/* clip (not hidden): hidden makes body a scroll container, which breaks
+		position: sticky descendants (e.g. blog TOC sidebar). clip still
+		prevents horizontal scrolling without creating one. */
+	overflow-x: clip;
 }
 
 h1,

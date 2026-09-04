@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getPost, listPosts } from '$lib/blog/posts';
+import { getPost, listPosts, relatedPosts, extractToc } from '$lib/blog/posts';
 import type { Component } from 'svelte';
 import type { PageLoad } from './$types';
 
@@ -18,5 +18,5 @@ export const load: PageLoad = async ({ params }) => {
 	const mod = (await import(`../../../content/blog/${params.slug}.svx`)) as {
 		default: Component;
 	};
-	return { post, Content: mod.default };
+	return { post, Content: mod.default, related: relatedPosts(params.slug), toc: extractToc(params.slug) };
 };

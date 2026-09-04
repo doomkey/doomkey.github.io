@@ -1,0 +1,67 @@
+---
+title: 'Things Every New Business Forgets to Set Up (Domain, Email, Google Profile, SSL)'
+seoTitle: 'New Business Checklist: Domain, Email, Google, SSL'
+description: 'Registered the business? Most owners stop there and miss the four setups that make them findable and trustworthy: domain, business email, Google profile, and site security.'
+date: '2026-09-04'
+tags: ['domain', 'business-email', 'seo']
+author: 'Doomkey'
+draft: false
+---
+
+## Registration done? You're halfway there
+
+Trade license in hand. Business name registered. It feels official now. So most owners do the obvious next things: print a signboard, open a Facebook page, start telling people.
+
+Then they stop. And the invisible half of the setup never happens. No domain. Gmail for everything. No Google listing. A website (if one exists) that browsers flag as "not secure." Each gap looks small on its own. Together they tell every buyer, supplier, and gateway the same story: this business isn't finished yet.
+
+Fix all four now, while the business is young, and you never pay the catch-up tax later.
+
+## 1. Your domain (before someone else takes it)
+
+The domain is step two after registration. Full stop. `yourbusiness.com` costs little per year, and everything else on this list hangs off it: email, website, verification, trust.
+
+Two mistakes owners make here. First, waiting. Good names disappear fast, and lookalike domains get grabbed by people you don't want to negotiate with. Second, settling for a free subdomain or a Facebook page URL as the "official" address. Those aren't assets. You can't sell them, you barely control them, and they advertise that the real name was taken.
+
+Buy the `.com` matching your registered name. If it's gone, a clean variant beats a clever one. Ten minutes, once a year, done.
+
+## 2. Business email on that domain (not Gmail)
+
+This is the one customers actually see. Every invoice, every order update, every supplier email arrives carrying either your business name or `mybusiness123@gmail.com`. One of those closes deals. The other raises eyebrows.
+
+Beyond looks, the practical gates pile up fast. Payment gateway applications ask for a business address. Verification forms for Facebook Business, Google, and marketplaces flag personal emails. Staff changes turn personal inboxes into hostage situations. None of this is theoretical. It's the standard paperwork of running a company, and Gmail fails most of it.
+
+Setup is small: mailbox, phone and web access, the behind-the-scenes records that keep mail out of spam folders, all handed over with full access. Most businesses send from the new address within a day. The full argument lives here: [why your business needs email on its own domain](/blog/why-business-email).
+
+## 3. Your Google Business Profile (free customers)
+
+Nobody finds new shops by accident anymore. They Google the category plus the area, and Google shows a map pack of claimed, reviewed, complete profiles. Unclaimed businesses don't appear. It's that simple.
+
+Claiming takes under an hour and costs nothing: exact business name, correct category, address, hours, phone, real photos. Then keep the name-address-phone identical everywhere (page, site, profile) and collect reviews steadily, a few a month, answered politely. That matching and those reviews are most of what "local SEO" means for a new shop. Plain version here: [local SEO basics for shops on social media](/blog/local-seo-small-business).
+
+## 4. The padlock: site security buyers check without knowing
+
+Ever clicked past a "Not Secure" warning? Your buyers do the same to sites without SSL, which is just the certificate that puts the padlock in the address bar and the `https` in front of your domain. Browsers now warn openly on pages without it, Google ranks secure sites higher, and payment pages without it are dead on arrival.
+
+The good news: this one is nearly automatic these days. Any decent hosting includes it free, and setup takes minutes. The bad news: plenty of cheap or DIY sites still ship without it, and owners never notice because *their* browser remembers and skips the warning. Check yours in a private window. No padlock, no trust.
+
+## The order that saves you rework
+
+Do it in this sequence and nothing gets redone: **domain first** (everything hangs off it), then **email and website in parallel** (both need the domain), then **Google profile** (points at the site), with **SSL** switched on the moment the site goes live. A weekend of admin, handled once, pays off every single day after.
+
+Skip the order and you repeat work. Email first on a random domain, then rebranding everything when the real name gets bought. Website live without the padlock, then patching it after buyers bounce. New businesses can least afford rework, so sequence it right.
+
+## The checklist, in one glance
+
+| # | Setup | Why it matters | Do it when |
+| - | ----- | -------------- | ---------- |
+| 1 | Domain (`yourbusiness.com`) | Foundation for everything; trust signal | Right after registration |
+| 2 | Business email | Invoices get opened; gateways approve | Same week as domain |
+| 3 | Simple website | Google finds you; buyers trust you | With email, in parallel |
+| 4 | Google Business Profile | Map pack, reviews, calls | As soon as site is live |
+| 5 | SSL padlock | No browser warnings; payments work | The moment the site launches |
+
+## Where Doomkey fits
+
+This list is exactly our bundle: domain guidance, business email setup, a simple site buyers and Google can trust, all live within days with nothing technical on your end. Registration was step one. Consider this step two, handled for you.
+
+Start where buyers look first: our [email service](/email-service) moves you onto your own domain, inbox and mobile app ready, sending within a day.

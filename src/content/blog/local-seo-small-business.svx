@@ -1,0 +1,63 @@
+---
+title: 'Local SEO Basics for Shops That Only Exist on Social Media'
+seoTitle: 'Local SEO for Small Business: Get Found on Google'
+description: 'Your shop is invisible on Google because Google ranks websites, not Facebook pages. Plain-language local SEO for small business: profile, website, reviews.'
+date: '2026-08-21'
+tags: ['seo', 'website']
+author: 'Doomkey'
+draft: false
+---
+
+## Google your business name right now
+
+Go ahead. Open Google, type your shop's name, and look at what comes back. If you only exist on social media, the result is usually one of three things: your Facebook page and nothing else, a competitor with a similar name, or a blank page of unrelated results.
+
+That blank space is where your next customers are looking. Every day, people near you search for what you sell. "Tailor near me." "Birthday cake order online." "Mobile servicing Dhanmondi." Google answers those searches with websites and map listings. Facebook pages barely register. So the work starts with understanding one thing: Google can't recommend what it can't see.
+
+## Why Facebook pages are invisible to Google
+
+Google's job is answering questions with trustworthy pages. A Facebook page fails that test three ways. The content sits behind a login wall Google only partly reads. The address, hours, and prices change from post to post instead of living in one reliable place. And nothing on the page tells Google this is a real, established business rather than a weeks-old account.
+
+None of this is Facebook's fault. Social apps are built to keep people scrolling inside them, not to feed Google. Expecting your page to rank is like expecting a shop with no signboard to get walk-in traffic. The fix isn't posting more. It's giving Google something built to be found.
+
+## Step 1: claim your Google Business Profile (it's free)
+
+This is the listing that puts you on Google Maps and in the side panel when someone searches your name. It costs nothing and takes under an hour:
+
+1. **Search your business name on Google Maps.** If a listing already exists (customers sometimes create one), claim it. If not, add it.
+2. **Fill in everything.** Exact business name, correct category, full address, phone number, opening hours, photos of the shop and products. Empty fields rank lower. Full profiles win.
+3. **Use the same details everywhere.** The name, address, and phone number must match your Facebook page and website character for character. Google cross-checks. Mismatches make it doubt you.
+4. **Ask happy buyers for reviews.** A profile with twenty real reviews outranks an identical one with two. Ask in person, right after a good sale, while they're smiling.
+
+Do this today. It's the single highest-return hour in local SEO, and most of your competitors haven't bothered.
+
+## Step 2: give Google a website to point at
+
+Here's the part profiles can't do alone. Google trusts businesses with a real website behind them, and buyers do too. The site doesn't need to be big. It needs five things on pages Google can read:
+
+- **Your business name, address, and phone number**, written plainly, matching the profile exactly
+- **What you sell and where**, in normal words ("custom panjabis made in Dhaka"), not slogans
+- **How to order or visit**, with the steps spelled out
+- **Prices or starting prices**, because "inbox for price" doesn't rank and scares off comparison shoppers
+- **A contact route that looks real**, ideally email on your own domain rather than a Gmail address (more on why that matters: [why your business needs email on its own domain](/blog/why-business-email))
+
+One clear page covering all five beats a dead site with twenty thin pages. And it beats a Facebook-only presence every single time, because now Google has something to show when someone searches what you sell.
+
+## Step 3: collect proof and keep it fresh
+
+Google promotes businesses that look alive. Two habits do most of the work:
+
+- **Reviews, steadily.** Not fifty in one week (that looks bought), but a few every month, answered politely. Replies show Google and buyers alike that someone's home.
+- **Fresh signals.** Post your offers on the Google profile itself, keep holiday hours updated, add new product photos monthly. A profile untouched for a year quietly sinks.
+
+Neither habit takes more than a few minutes a week. Consistency beats intensity here.
+
+## What this gets you in 90 days
+
+Realistic expectations, no hype. Month one: your business name search shows a proper panel with map, hours, reviews. Month two: "near me" searches in your category start surfacing you, and profile calls and direction requests climb. Month three: the website starts catching product searches, and a visible share of new buyers says "found you on Google" instead of "saw your page." None of it requires ads. All of it compounds.
+
+## Where Doomkey fits
+
+The unglamorous truth: most shop owners never do step two, because "get a website" sounds expensive and technical. It isn't. A domain, one clear page with your details, and a business email address. Live within days, handled for you, built exactly so Google (and buyers) can find and trust you.
+
+If the Facebook-only trap sounds familiar, start with [why 50K followers still isn't a website](/blog/facebook-page-vs-website). Then talk to us through our [email service](/email-service) page and we'll map the whole setup: domain, site, email, profile. Nothing technical on your end.

@@ -38,6 +38,7 @@ export function GET() {
     <link>${SITE}/blog</link>
     <description>Notes from Doomkey on domains, business email, and running a real company online.</description>
     <language>en-us</language>
+    <lastBuildDate>${posts.length > 0 ? toRfc822(posts[0].updated ?? posts[0].date) : new Date().toUTCString()}</lastBuildDate>
 ${items}
   </channel>
 </rss>
