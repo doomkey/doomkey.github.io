@@ -1,0 +1,68 @@
+---
+title: 'Your Business Registration Is Done. Now What?'
+seoTitle: 'After Business Registration: Setup Checklist'
+description: 'Trade license in hand? The 30-day setup that turns a registered name into a working business: domain, email, bank, Google profile, and a site buyers trust.'
+date: '2026-09-04'
+tags: ['domain', 'business-email', 'website']
+author: 'Doomkey'
+draft: false
+---
+
+## The certificate is framed. The business isn't real yet.
+
+Trade license collected. Name registered. Congratulations, genuinely. But right now you own a name on paper, not a business customers can find, pay, or trust. The next 30 days decide which one it becomes.
+
+Most new owners fill this month with visible things: signboard, Facebook page, launch offers. Those feel like progress. The unglamorous admin underneath is what actually lets money flow in. Here's the sequence, week by week.
+
+## Week 1: claim your name everywhere it counts
+
+Before anything else, lock down the name in the places that run out:
+
+- **The domain.** `yourbusiness.com`, bought now, before someone else takes it or the price of getting it back gets silly. Ten minutes, once a year. Everything digital hangs off this.
+- **Matching handles.** Facebook page, Instagram, WhatsApp Business, TikTok if your buyers live there. Same name, same logo, same phone number everywhere. Future you will thank present you.
+- **A business bank account.** Open it while the registration papers are fresh, because banks ask for exactly what you just received. Mixing business money through a personal account feels fine until tax time, supplier payments, or a loan application. Then it hurts.
+
+Week one is all ownership. Nothing here makes you money directly. All of it prevents expensive pain later.
+
+## Week 2: become reachable like a real company
+
+This is the week buyers start judging you, so give them something solid to judge:
+
+- **Business email on your domain.** `hello@yourbusiness.com` instead of `mybusiness123@gmail.com`. Invoices, supplier mail, gateway applications. The full case for switching lives here: [why your business needs email on its own domain](/blog/why-business-email). Live within a day, nothing technical on your end.
+- **One clear website.** Not a portal. One page: what you sell, prices or starting prices, how to order, how to reach you. Buyers Google new businesses before first purchase. Give them somewhere to land. (The Facebook-only trap is real: [50K followers still isn't a website](/blog/facebook-page-vs-website).)
+- **Consistent details.** The business name, address, and phone number must match character for character across the site, the page, and everything from week one. Google cross-checks. Mismatches make you look sloppy to algorithms and humans alike.
+
+End of week two, a stranger can find you, understand you, and contact you professionally. Most new businesses never reach this state. You just passed them.
+
+## Week 3: get found and get proof
+
+Now convert "exists" into "discoverable":
+
+- **Google Business Profile.** Free listing, under an hour, puts you on Maps and in the side panel for name searches. Fill every field, add real photos, then ask early buyers for reviews while they're happy. The plain-language walkthrough: [local SEO basics for shops on social media](/blog/local-seo-small-business).
+- **First reviews, everywhere it matters.** Google first, Facebook recommendations second. A dozen honest reviews in month one beats a hundred bought ones later. Ask in person, right after a good sale.
+- **Basic books from day one.** Separate money in, money out, every invoice numbered and saved.  Also the difference between a clean tax filing and a panic.
+
+## Week 4: tighten what buyers touch
+
+Final pass before you call setup done:
+
+- **The padlock.** Open your site in a private window. No padlock and "Not Secure" warning? Fix it before spending a taka on promotion. Buyers bounce from warnings, and payment pages without it are dead.
+- **An order path that works end to end.** Place a test order yourself, as a stranger would. Message the page, follow the site instructions, pay the way buyers pay. Every confusion you hit is a lost sale you just prevented.
+- **One backup of everything.** Domain login, email recovery, page admin roles for two people (never one; hacked solo admins lose pages weekly), site files. Fifteen minutes that prevents disasters.
+
+## The full 30 days on one card
+
+| Week | Focus | Done looks like |
+| ---- | ----- | --------------- |
+| 1 | Ownership | Domain bought, handles claimed, bank account open |
+| 2 | Reachability | Business email live, one-page site up, details match |
+| 3 | Discoverability | Google profile claimed, first reviews in, books started |
+| 4 | Trust | Padlock on, order path tested, backups stored |
+
+Miss a week and the business still runs. Miss the pattern (own, reachable, discoverable, trustworthy) and you're the registered name with nothing behind it.
+
+## Where Doomkey fits
+
+Weeks two and four are our bundle: domain guidance, business email setup, a simple site buyers and Google trust, all live within days with nothing technical on your end. Registration was the paperwork. This is the part that makes it a business.
+
+Start where buyers look first: our [email service](/email-service) moves you onto your own domain, inbox and mobile app ready, sending within a day. For the complete picture, the deep version lives here: [things every new business forgets to set up](/blog/new-business-setup-checklist).
