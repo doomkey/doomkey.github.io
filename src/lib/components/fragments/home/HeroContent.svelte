@@ -44,6 +44,8 @@
 			</div>
 			<!-- <p>We build high-performance apps with care. The apps which are loved by the users.</p>
 			<p class="text-black! italic">Scroll down to see our projects.</p> -->
+			<a href="#projects" role="button">View Projects</a>
+			<a href="#services" role="button" class="outline">Services</a>
 		</div>
 	</section>
 </div>
@@ -79,7 +81,7 @@
 		display: flex;
 		white-space: nowrap;
 		width: max-content;
-		animation: scroll-x 16s linear infinite;
+		animation: scroll-x 26s linear infinite;
 		font-weight: 900;
 		color: var(--color-accent);
 	}
@@ -92,7 +94,7 @@
 		font-size: 15rem !important;
 	}
 	.scale-marquee-track--reverse {
-		animation: scroll-x-reverse 36s linear infinite;
+		animation: scroll-x-reverse 56s linear infinite;
 	}
 	@keyframes scroll-x {
 		from {

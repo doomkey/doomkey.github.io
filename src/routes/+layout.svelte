@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../reset.css';
+	// import '../reset.css';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 
