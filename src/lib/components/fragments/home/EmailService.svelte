@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 
 	let termNode;
@@ -174,6 +175,10 @@
 				target="_blank"
 				rel="noreferrer">Set up my business email</a
 			>
+
+			<a href={resolve("/email-service")} class="outline" role="button">
+			    Learn More
+			</a>
 		</div>
 	</div>
 </section>
@@ -346,21 +351,6 @@
 		margin-top: 40px;
 		flex-wrap: wrap;
 	}
-
-	.dmk-cta {
-		background: var(--amber);
-		color: #14140f;
-		border: none;
-		font-family: inherit;
-		font-size: 14.5px;
-		font-weight: 700;
-		padding: 14px 22px;
-		border-radius: 5px;
-		cursor: pointer;
-		letter-spacing: 0.01em;
-	}
-
-
 
 
 
