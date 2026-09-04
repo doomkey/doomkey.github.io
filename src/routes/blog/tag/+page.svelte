@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Tags — Doomkey Blog</title>
+	<title>Tags - Doomkey Blog</title>
 	<meta name="description" content="Browse Doomkey blog posts by tag." />
 	<link rel="canonical" href="https://doomkeybd.com/blog/tag" />
 </svelte:head>

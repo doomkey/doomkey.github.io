@@ -52,11 +52,11 @@ function parseMeta(slug: string, raw: unknown): PostMeta | null {
 	if (!raw || typeof raw !== 'object') return null;
 	const m = raw as Record<string, unknown>;
 	if (typeof m.title !== 'string' || typeof m.description !== 'string' || typeof m.date !== 'string') {
-		console.warn(`[blog] ${slug}.svx missing required frontmatter (title, description, date) — skipped`);
+		console.warn(`[blog] ${slug}.svx missing required frontmatter (title, description, date) - skipped`);
 		return null;
 	}
 	if (Number.isNaN(Date.parse(m.date))) {
-		console.warn(`[blog] ${slug}.svx has unparsable date — skipped`);
+		console.warn(`[blog] ${slug}.svx has unparsable date - skipped`);
 		return null;
 	}
 	return {

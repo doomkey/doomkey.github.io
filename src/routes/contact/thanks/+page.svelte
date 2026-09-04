@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Message Received — Doomkey</title>
+	<title>Message Received - Doomkey</title>
 	<meta name="description" content="Thanks for reaching out. We reply within a day." />
 	<link rel="canonical" href="https://doomkeybd.com/contact/thanks" />
 </svelte:head>

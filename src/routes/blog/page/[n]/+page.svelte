@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog — page {data.page} — Doomkey</title>
+	<title>Blog - page {data.page} - Doomkey</title>
 	<meta name="description" content="Notes from Doomkey on domains, business email, and running a real company online." />
 	<meta name="robots" content="noindex, follow" />
 	<link rel="canonical" href={canonical} />

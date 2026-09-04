@@ -5,11 +5,11 @@
 
 	interface ServiceLink {
 		label: string;
-		href: '/email-service' | '/website-service';
+		href: '/email-service' | '/website-service' | '/seo-service';
 		blurb: string;
 	}
 
-	// Add future services here — no layout changes needed.
+	// Add future services here - no layout changes needed.
 	const services: ServiceLink[] = [
 		{
 			label: 'Email service',
@@ -20,6 +20,11 @@
 			label: 'Website service',
 			href: '/website-service',
 			blurb: 'One clear page that sells'
+		},
+		{
+			label: 'SEO + AEO service',
+			href: '/seo-service',
+			blurb: 'Get found - by Google and AI'
 		}
 	];
 

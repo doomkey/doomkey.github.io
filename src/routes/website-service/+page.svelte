@@ -37,7 +37,7 @@
 				how to order, how to reach you.
 			</p>
 			<div class="mt-2">
-				<a href="#get-started" role="button" class="primary">Get my website</a>
+				<a href="#how-it-works" role="button" class="primary">See how it works</a>
 			</div>
 		</div>
 	</section>
@@ -82,7 +82,8 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="how-it-works">
+<section>
 		<div class="border-t py-12">
 			<h2 class="mb-6">How it works</h2>
 			<ol class="m-0 grid list-none gap-6 p-0 sm:grid-cols-3">
@@ -116,6 +117,13 @@
 					<span>✓</span><span>Pairs with business email on the same domain</span>
 				</li>
 				<li class="flex items-start gap-2">
+					<span>✓</span><span
+						>Built so Google and AI can read it. Pair with our <a
+							href={resolve("/seo-service")}>SEO + AEO service</a
+						> to get recommended, not just published</span
+					>
+				</li>
+				<li class="flex items-start gap-2">
 					<span>✓</span><span>Fast on phones, where your buyers actually are</span>
 				</li>
 				<li class="flex items-start gap-2">
@@ -130,15 +138,15 @@
 			<h2 class="mb-6">Who this is for</h2>
 			<ul class="m-0 flex list-none flex-col gap-3 p-0">
 				<li class="flex items-start gap-2">
-					<span>—</span><span
+					<span>-</span><span
 						>Facebook sellers whose growth stalled at the same follower count</span
 					>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>—</span><span>Newly registered businesses that need to look real fast</span>
+					<span>-</span><span>Newly registered businesses that need to look real fast</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>—</span><span
+					<span>-</span><span
 						>Marketplace sellers paying commission on buyers they found themselves</span
 					>
 				</li>

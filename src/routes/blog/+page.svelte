@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog — Doomkey</title>
+	<title>Blog - Doomkey</title>
 	<meta name="description" content="Notes from Doomkey on domains, business email, and running a real company online." />
 	<link rel="canonical" href="https://doomkeybd.com/blog" />
 	<link rel="alternate" type="application/rss+xml" title="Doomkey Blog" href="https://doomkeybd.com/blog/rss.xml" />

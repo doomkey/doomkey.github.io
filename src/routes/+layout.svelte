@@ -42,6 +42,11 @@
 						>Website service</a
 					>
 				</li>
+				<li>
+					<a href={resolve('/seo-service')} class="no-underline hover:underline hover:underline-offset-4"
+						>SEO + AEO service</a
+					>
+				</li>
 			</ul>
 		</nav>
 		<nav aria-label="Explore">

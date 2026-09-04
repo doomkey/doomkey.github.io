@@ -79,7 +79,8 @@
 						class="rounded-lg border border-text/30 bg-white/60 px-4 py-2.5 text-body outline-none focus:border-accent">
 						<option>Business email</option>
 						<option>Website</option>
-						<option>Both email and website</option>
+						<option>SEO / AI presence</option>
+						<option>Email + website + SEO</option>
 						<option>Not sure yet</option>
 					</select>
 				</label>

@@ -36,7 +36,7 @@
 				real company. Already own the domain? We move your email onto it.
 			</p>
 			<div class="mt-2">
-				<a href="#get-started" role="button" class="primary">Set up my business email</a>
+				<a href="#how-it-works" role="button" class="primary">See how email setup works</a>
 			</div>
 		</div>
 	</section>
@@ -83,7 +83,8 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="how-it-works">
+<section>
 		<div class="border-t py-12">
 			<h2 class="mb-6">How it works</h2>
 			<ol class="m-0 grid list-none gap-6 p-0 sm:grid-cols-3">
@@ -129,15 +130,15 @@
 			<h2 class="mb-6">Who this is for</h2>
 			<ul class="m-0 flex list-none flex-col gap-3 p-0">
 				<li class="flex items-start gap-2">
-					<span>—</span><span
+					<span>-</span><span
 						>Have a website and domain, but still email customers from Gmail</span
 					>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>—</span><span>Run on a Facebook page or storefront with no domain yet</span>
+					<span>-</span><span>Run on a Facebook page or storefront with no domain yet</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>—</span><span
+					<span>-</span><span
 						>Need a professional address for verification, outreach, or partnerships</span
 					>
 				</li>

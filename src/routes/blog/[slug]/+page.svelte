@@ -11,7 +11,7 @@
 	// post → post, so plain consts would go stale after client-side nav.
 	let Content = $derived(data.Content);
 	let canonical = $derived(`https://doomkeybd.com/blog/${data.post.slug}`);
-	let headTitle = $derived(`${data.post.seoTitle ?? data.post.title} — Doomkey`);
+	let headTitle = $derived(`${data.post.seoTitle ?? data.post.title} - Doomkey`);
 	let jsonLd = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'Article',
@@ -27,7 +27,7 @@
 	let progress = $state(0);
 	let copied = $state(false);
 
-	let shareText = $derived(`${data.post.title} — Doomkey`);
+	let shareText = $derived(`${data.post.title} - Doomkey`);
 	let shareLinks = $derived([
 		{ name: 'X', href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(canonical)}` },
 		{ name: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonical)}` },

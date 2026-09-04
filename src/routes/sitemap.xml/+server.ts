@@ -5,7 +5,7 @@ export const prerender = true;
 const SITE = 'https://doomkeybd.com';
 
 // Static pages: derived from route files, so new pages are listed automatically.
-// Param routes ([slug], [tag]) and endpoints (+server.ts) are excluded here —
+// Param routes ([slug], [tag]) and endpoints (+server.ts) are excluded here -
 // posts and tags come from frontmatter below with real dates.
 const pageModules = import.meta.glob('/src/routes/**/+page.svelte', { eager: true });
 
