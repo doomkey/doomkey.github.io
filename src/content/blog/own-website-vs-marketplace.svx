@@ -1,0 +1,57 @@
+---
+title: 'When Should You Build Your Own Store Instead of Relying on Daraz or Instagram?'
+seoTitle: 'Marketplace vs Own Website: When to Move'
+description: 'Daraz and Instagram bring orders with zero setup, then take commission, hide your customers, and change the rules. How to know when an owned website pays off.'
+date: '2026-09-04'
+tags: ['website', 'domain']
+author: 'Doomkey'
+draft: false
+---
+
+## Marketplaces are the perfect start. And a trap.
+
+Zero setup. Millions of visitors. Orders from week one. For a new seller, Daraz or Instagram Shop is the obvious move, and honestly the right one. Building a full store on day one, before you know what sells, is how money gets wasted.
+
+But watch what happens as you grow. Commission on every order, forever. Customers who belong to the platform, not you. Policy changes that shrink margins overnight. Search results that rank the marketplace above your own name. The better you do, the more the trap tightens, because leaving gets harder exactly as staying gets more expensive.
+
+The question was never whether to start on a marketplace. It's how to know when you've outgrown it.
+
+## The math that tells you it's time
+
+Run these numbers honestly:
+
+- **Commission vs. a site.** Add up a month of marketplace commissions and fees. If that number covers a domain plus a simple site several times over, you're paying rent on something you could own. Most sellers cross this line far earlier than they expect, usually within the first good year.
+- **Repeat buyers you can't reach.** Count customers who ordered twice but only exist as order numbers in someone else's dashboard. Every one of them is a future sale you'll pay commission on again, because you can't contact them directly.
+- **Traffic you already earn.** If buyers search your shop name and land on the marketplace listing, that demand is yours. A website just catches it without the middleman cut.
+
+No single number decides it. But when all three point the same way for three months straight, the math has spoken.
+
+## What marketplaces take besides commission
+
+Money is the visible cost. The quiet ones hurt more:
+
+- **Your customer relationships.** No buyer list, no emails, no order history you can export. Marketing to past buyers, the cheapest sales in existence, is impossible.
+- **Your brand.** Your products sit in a grid next to cheaper knockoffs, under someone else's logo, with reviews the platform can feature or bury. Price becomes the only differentiator, which is a race to the bottom.
+- **Your stability.** Fee hikes, category rule changes, account flags during peak season. Sellers who lived through a sudden policy shift know: the platform protects the platform.
+- **Google visibility.** Marketplace listings rank. Your business, as an independent entity, barely exists in search. All that demand flows through their domain, building their authority with your sales.
+
+## What an owned store actually needs to work
+
+Smaller than sellers fear. The stores that successfully leave marketplaces share the same skeleton:
+
+1. **Your domain, matching your shop name.** The address buyers remember and Google ranks. Bought once a year, owned outright.
+2. **A focused site, not a mega-mall.** Bestsellers first, clear prices, simple ordering (WhatsApp or bKash buttons count at the start), contact details that match everywhere. Ten products presented well beat a thousand listed badly.
+3. **A way to reach buyers directly.** Order confirmations and offers from `orders@yourbusiness.com`, not a personal Gmail buyers half-trust. (The email case in full: [why your business needs email on its own domain](/blog/why-business-email).)
+4. **Both channels running together.** The move is gradual, never overnight. Keep the marketplace listings. Add "order direct and save" incentives. Watch the mix shift month by month until the site carries itself.
+
+Sellers coming from social-only selling face the same pattern from a different direction: [why your Facebook Shop isn't enough anymore](/blog/facebook-shop-vs-website).
+
+## "But my buyers only trust marketplaces"
+
+True at first. Marketplace badges do real trust work for unknown sellers. So borrow that trust while building your own: reviews and testimonials on your site, real photos instead of stock, clear return policy written plainly, cash-on-delivery kept as an option. Trust transfers faster than sellers expect. Within months, repeat buyers skip the marketplace on their own, because direct is cheaper and more personal for them too.
+
+## Where Doomkey fits
+
+Leaving a marketplace feels like rebuilding from zero. It isn't. Domain, [simple site](/website-service), business email, all live within days with nothing technical on your end, while your existing listings keep selling through the transition. You don't jump. You build the landing pad, then walk over.
+
+Start with identity: our [email service](/email-service) puts you on your own domain first, inbox and mobile app ready, sending within a day. The storefront follows the same playbook.
