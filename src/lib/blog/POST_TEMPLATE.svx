@@ -1,0 +1,25 @@
+---
+title: 'Post title'
+description: 'One or two sentences shown on the index, in search results, and in link previews.'
+date: '2026-09-05'
+updated: '2026-09-06'
+tags: ['business-email']
+author: 'Doomkey'
+draft: true
+# ogImage: '/blog/my-post-slug/og.png'
+---
+
+## Heading
+
+Write the post here. GitHub-flavored markdown works: tables, task lists,
+fenced code blocks.
+
+```bash
+echo hello
+```
+
+## Checklist before publishing
+
+- Set `draft: false`.
+- Keep filename lowercase alphanumeric + hyphens (it becomes the URL slug).
+- `npm run dev` → open `/blog/my-post-slug` to preview.

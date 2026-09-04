@@ -5,6 +5,10 @@
 <header>
 	<div class="flex items-center justify-between px-5 py-4">
 		<a href={resolve("/")}>Doomkey</a>
+		<nav class="flex gap-4">
+			<a href={resolve("/email-service")}>Email service</a>
+			<a href={resolve("/blog")}>Blog</a>
+		</nav>
 	</div>
 </header>
 

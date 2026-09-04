@@ -3,17 +3,38 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@layer base{
-
-:root {
-	--font-main: 'JetBrains Mono', monospace;
-	--font-heading: 'Stack Sans Headline', sans-serif;
+@theme {
 	--color-bg: rgb(253, 231, 244);
 	--color-bg-alt: #f9e960;
 	--color-text: rgb(116, 9, 229);
 	--color-text-alt: #3b2159;
 	--color-accent: #f12428;
 
+	--font-main: 'JetBrains Mono', monospace;
+	--font-heading: 'Stack Sans Headline', sans-serif;
+
+	--text-body-xl: 0.9148rem;
+	--text-body-xl--line-height: 1.6;
+	--text-body-xl--letter-spacing: 0.03em;
+
+	--text-caption: 0.7638rem;
+	--text-caption--line-height: 1.65;
+	--text-caption--letter-spacing: 0.03em;
+
+	--text-overline: 0.6974rem;
+	--text-overline--line-height: 1.65;
+	--text-overline--letter-spacing: 0.03em;
+
+	--container-section: 960px;
+	--container-post: 68ch;
+	--container-narrow: 62ch;
+}
+
+@layer base{
+
+:root {
+	/* Colors, fonts, and text sizes live in @theme above (emitted to :root
+		automatically); only non-token vars stay here. */
 	--width-section: 960px;
 
 	--display-lg-size: 2.1148rem;
@@ -56,10 +77,7 @@
 	--h6-line-height: 1.6;
 	--h6-letter-spacing: 0.03em;
 
-	--body-xl-size: 0.9148rem;
 	--body-xl-weight: 400;
-	--body-xl-line-height: 1.6;
-	--body-xl-letter-spacing: 0.03em;
 
 	--body-size: 0.875rem;
 	--body-weight: 400;
@@ -76,20 +94,14 @@
 	--caption-lg-line-height: 1.65;
 	--caption-lg-letter-spacing: 0.03em;
 
-	--caption-size: 0.7638rem;
 	--caption-weight: 400;
-	--caption-line-height: 1.65;
-	--caption-letter-spacing: 0.03em;
 
 	--caption-sm-size: 0.7303rem;
 	--caption-sm-weight: 300;
 	--caption-sm-line-height: 1.65;
 	--caption-sm-letter-spacing: 0.03em;
 
-	--overline-size: 0.6974rem;
 	--overline-weight: 500;
-	--overline-line-height: 1.65;
-	--overline-letter-spacing: 0.03em;
 }
 body {
 	font-size: var(--body-size);
@@ -238,6 +250,7 @@ button,
 		--body-xl-weight: 400;
 		--body-xl-line-height: 1.6;
 		--body-xl-letter-spacing: 0.03em;
+		--text-body-xl: 1.0469rem;
 
 		--body-size: 1rem;
 		--body-weight: 400;
@@ -258,6 +271,7 @@ button,
 		--caption-weight: 400;
 		--caption-line-height: 1.65;
 		--caption-letter-spacing: 0.03em;
+		--text-caption: 0.8725rem;
 
 		--caption-sm-size: 0.8331rem;
 		--caption-sm-weight: 300;
@@ -268,6 +282,7 @@ button,
 		--overline-weight: 500;
 		--overline-line-height: 1.65;
 		--overline-letter-spacing: 0.03em;
+		--text-overline: 0.7963rem;
 	}
 }
 }
