@@ -52,23 +52,23 @@
 				</label>
 
 				<label class="flex flex-col gap-2">
-					<span class="text-caption font-semibold tracking-wide">Business name</span>
+					<span class="text-caption font-semibold tracking-wide">Email *</span>
 					<input
-						type="text"
-						name="business"
-						autocomplete="organization"
-						placeholder="Shop or brand name"
+						type="email"
+						name="email"
+						required
+						autocomplete="email"
+						placeholder="you@example.com"
 						class="rounded-lg border border-text/30 bg-white/60 px-4 py-2.5 text-body outline-none placeholder:opacity-50 focus:border-accent" />
 				</label>
 
 				<label class="flex flex-col gap-2">
-					<span class="text-caption font-semibold tracking-wide">Phone or email *</span>
+					<span class="text-caption font-semibold tracking-wide">Phone (optional)</span>
 					<input
-						type="text"
-						name="contact"
-						required
+						type="tel"
+						name="phone"
 						autocomplete="tel"
-						placeholder="How do we reach you?"
+						placeholder="01XXXXXXXXX"
 						class="rounded-lg border border-text/30 bg-white/60 px-4 py-2.5 text-body outline-none placeholder:opacity-50 focus:border-accent" />
 				</label>
 
@@ -85,10 +85,9 @@
 				</label>
 
 				<label class="flex flex-col gap-2">
-					<span class="text-caption font-semibold tracking-wide">Tell us briefly *</span>
+					<span class="text-caption font-semibold tracking-wide">Tell us briefly (optional)</span>
 					<textarea
 						name="message"
-						required
 						rows="5"
 						placeholder="What are you running, and what's missing? A sentence or two is plenty."
 						class="rounded-lg border border-text/30 bg-white/60 px-4 py-2.5 text-body outline-none placeholder:opacity-50 focus:border-accent"></textarea>
