@@ -90,7 +90,7 @@
 	<title>{headTitle}</title>
 	<meta name="description" content={data.post.description} />
 	<link rel="canonical" href={canonical} />
-	<link rel="alternate" type="application/rss+xml" title="Doomkey Blog" href={resolve('/blog/rss.xml')} />
+	<link rel="alternate" type="application/rss+xml" title="Doomkey Blog" href="https://doomkeybd.com/blog/rss.xml" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.post.seoTitle ?? data.post.title} />
 	<meta property="og:description" content={data.post.description} />
@@ -106,16 +106,6 @@
 <div class="fixed inset-x-0 top-0 z-50 h-1 bg-transparent" aria-hidden="true">
 	<div class="h-full bg-accent" style="width: {progress}%"></div>
 </div>
-
-<header>
-	<div class="mx-auto flex max-w-section items-center justify-between px-5 py-4">
-		<a href={resolve('/')}>Doomkey</a>
-		<nav class="flex gap-4">
-			<a href={resolve('/email-service')}>Email service</a>
-			<a href={resolve('/blog')}>Blog</a>
-		</nav>
-	</div>
-</header>
 
 <main class="scroll-smooth px-4">
 	<article class="mx-auto w-full max-w-post lg:max-w-[calc(68ch_+_15rem_+_3rem)]">

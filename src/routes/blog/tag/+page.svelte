@@ -10,16 +10,6 @@
 	<link rel="canonical" href="https://doomkeybd.com/blog/tag" />
 </svelte:head>
 
-<header>
-	<div class="mx-auto flex max-w-section items-center justify-between px-5 py-4">
-		<a href={resolve('/')}>Doomkey</a>
-		<nav class="flex gap-4">
-			<a href={resolve('/email-service')}>Email service</a>
-			<a href={resolve('/blog')}>Blog</a>
-		</nav>
-	</div>
-</header>
-
 <main>
 	<section>
 		<div class="mx-auto flex max-w-narrow flex-col gap-4 py-16">

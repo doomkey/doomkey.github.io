@@ -1,14 +1,12 @@
 <script>
-	import { resolve } from "$app/paths";
-
-	const canonical = "https://doomkeybd.com/email-service";
-	const title = "Email Service: Business Email on Your Domain | Doomkey";
+	const canonical = "https://doomkeybd.com/website-service";
+	const title = "Website Service: One Clear Page That Sells | Doomkey";
 	const description =
-		"A Gmail address makes a real business look unfinished. We move your email onto your own domain: inbox, mobile app, verification-ready. Set up and sending within a day.";
+		"Facebook brings discovery but hides you from Google. We build a simple, fast website buyers trust: your products, prices, ordering, and contact. Live within days.";
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "Service",
-		name: "Doomkey Email Service",
+		name: "Doomkey Website Service",
 		description,
 		url: canonical,
 		provider: { "@type": "Organization", name: "Doomkey", url: "https://doomkeybd.com" },
@@ -30,13 +28,14 @@
 <main>
 	<section>
 		<div class="flex flex-col gap-4 py-16">
-			<h1>A Gmail address makes a real business look unfinished.</h1>
+			<h1>Your Facebook page is rented land. A website is yours.</h1>
 			<p>
-				An @gmail.com address reads like a side project. An address on your own domain reads like a
-				real company. Already own the domain? We move your email onto it.
+				Buyers Google you before they buy. A Facebook page barely shows up, and it never
+				fully convinces strangers. One clear page fixes both: what you sell, what it costs,
+				how to order, how to reach you.
 			</p>
 			<div class="mt-2">
-				<a href="#get-started" role="button" class="primary">Set up my business email</a>
+				<a href="#get-started" role="button" class="primary">Get my website</a>
 			</div>
 		</div>
 	</section>
@@ -46,13 +45,12 @@
 			<h2 class="mb-6">Why this matters</h2>
 			<div class="grid gap-8 md:grid-cols-2">
 				<p>
-					Customers hesitate over order confirmations, invoices, and replies sent from a personal
-					Gmail address. Your own domain removes that doubt before they even read the message.
+					Search traffic goes to websites, not shop tabs. Without a site, every "near me"
+					search in your category sends buyers to competitors who have one.
 				</p>
 				<p>
-					Verification forms, payment gateways, marketplace approvals. They ask for a business
-					email, and Gmail gets rejected. A branded address says established company, not side
-					project.
+					Strangers trust pages they control the look of: real prices, a return policy in
+					writing, contact details that match everywhere. A page builds that trust in one visit.
 				</p>
 			</div>
 		</div>
@@ -60,24 +58,23 @@
 
 	<section>
 		<div class="border-t py-12">
-			<h2 class="mb-6">What we do</h2>
+			<h2 class="mb-6">What we build</h2>
 			<div class="grid gap-6 sm:grid-cols-2">
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
-					<h3>Already have a domain?</h3>
-					<p>We set up professional email on it. Think hello@yourbusiness.com, live within a day.</p>
+					<h3>Selling on Facebook only?</h3>
+					<p>Your page keeps bringing discovery. The site becomes the place it points to.</p>
+				</div>
+				<div class="flex flex-col gap-2 rounded-lg border p-6">
+					<h3>No content ready?</h3>
+					<p>Send photos and prices however you have them. We shape it into a clear page.</p>
 				</div>
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
 					<h3>No domain yet?</h3>
-					<p>We help you pick one and set it up from scratch. One less thing to figure out.</p>
-				</div>
-				<div class="flex flex-col gap-2 rounded-lg border p-6">
-					<h3>No website either?</h3>
-					<p>We get you a simple one too. Same deal: handled for you, no technical maze.</p>
-					<p><a href={resolve("/website-service")}>See the website service →</a></p>
+					<p>We help you pick one and set it up. Same deal as email: handled for you.</p>
 				</div>
 				<div class="flex flex-col gap-2 rounded-lg border p-6">
 					<h3>Nothing technical</h3>
-					<p>Full access handed over. Inbox, mobile app, everything ready to go.</p>
+					<p>Fast, mobile-friendly, Google-readable. You get full access and plain guidance.</p>
 				</div>
 			</div>
 		</div>
@@ -89,15 +86,15 @@
 			<ol class="m-0 grid list-none gap-6 p-0 sm:grid-cols-3">
 				<li class="flex flex-col gap-2">
 					<span class="flex h-8 w-8 items-center justify-center rounded-full border">1</span>
-					<p>Tell us your domain. Don't have one? We help you pick it.</p>
+					<p>Tell us your business and send whatever you have: photos, prices, contact info.</p>
 				</li>
 				<li class="flex flex-col gap-2">
 					<span class="flex h-8 w-8 items-center justify-center rounded-full border">2</span>
-					<p>We configure business email on that domain. You touch nothing.</p>
+					<p>We build one clear page: products, ordering, contact. You review, we adjust.</p>
 				</li>
 				<li class="flex flex-col gap-2">
 					<span class="flex h-8 w-8 items-center justify-center rounded-full border">3</span>
-					<p>Full access handed over. Sending within a day.</p>
+					<p>Launch on your domain within days. Full access handed over, nothing held back.</p>
 				</li>
 			</ol>
 		</div>
@@ -108,17 +105,19 @@
 			<h2 class="mb-6">What you get</h2>
 			<ul class="m-0 flex list-none flex-col gap-3 p-0">
 				<li class="flex items-start gap-2">
-					<span>✓</span><span>The domain you already own, finally put to full use</span>
+					<span>✓</span><span>A page Google can find and buyers can trust</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>✓</span><span>Set up and sending within a day</span>
+					<span>✓</span><span>Domain guidance if you don't have one yet</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>✓</span><span>Nothing technical for you to do</span>
+					<span>✓</span><span>Pairs with business email on the same domain</span>
 				</li>
-				<li class="flex items-start gap-2"><span>✓</span><span>Full access handed to you</span></li>
 				<li class="flex items-start gap-2">
-					<span>✓</span><span>Works where you already work. Inbox, mobile app, calendar.</span>
+					<span>✓</span><span>Fast on phones, where your buyers actually are</span>
+				</li>
+				<li class="flex items-start gap-2">
+					<span>✓</span><span>Full access handed to you, plain guidance included</span>
 				</li>
 			</ul>
 		</div>
@@ -130,15 +129,15 @@
 			<ul class="m-0 flex list-none flex-col gap-3 p-0">
 				<li class="flex items-start gap-2">
 					<span>—</span><span
-						>Have a website and domain, but still email customers from Gmail</span
+						>Facebook sellers whose growth stalled at the same follower count</span
 					>
 				</li>
 				<li class="flex items-start gap-2">
-					<span>—</span><span>Run on a Facebook page or storefront with no domain yet</span>
+					<span>—</span><span>Newly registered businesses that need to look real fast</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span>—</span><span
-						>Need a professional address for verification, outreach, or partnerships</span
+						>Marketplace sellers paying commission on buyers they found themselves</span
 					>
 				</li>
 			</ul>
@@ -148,8 +147,14 @@
 	<section id="get-started">
 		<div class="flex flex-col items-start gap-4 border-t py-16">
 			<h2>Get started</h2>
-			<p>Sending within a day. Nothing technical on your end. Tell us your domain and we take it from there.</p>
-			<a href="#" role="button" class="primary">Set up my business email</a>
+			<p>Live within days. Nothing technical on your end. Tell us about your business and we take it from there.</p>
+			<a
+				href="https://www.facebook.com/doomkey.apps"
+				target="_blank"
+				rel="noreferrer"
+				role="button"
+				class="primary">Get my website</a
+			>
 		</div>
 	</section>
 </main>

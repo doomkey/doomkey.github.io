@@ -29,7 +29,7 @@ Week one is all ownership. Nothing here makes you money directly. All of it prev
 This is the week buyers start judging you, so give them something solid to judge:
 
 - **Business email on your domain.** `hello@yourbusiness.com` instead of `mybusiness123@gmail.com`. Invoices, supplier mail, gateway applications. The full case for switching lives here: [why your business needs email on its own domain](/blog/why-business-email). Live within a day, nothing technical on your end.
-- **One clear website.** Not a portal. One page: what you sell, prices or starting prices, how to order, how to reach you. Buyers Google new businesses before first purchase. Give them somewhere to land. (The Facebook-only trap is real: [50K followers still isn't a website](/blog/facebook-page-vs-website).)
+- **One clear website.** Not a portal. One page: what you sell, prices or starting prices, how to order, how to reach you. Buyers Google new businesses before first purchase. [Give them somewhere to land](/website-service). (The Facebook-only trap is real: [50K followers still isn't a website](/blog/facebook-page-vs-website).)
 - **Consistent details.** The business name, address, and phone number must match character for character across the site, the page, and everything from week one. Google cross-checks. Mismatches make you look sloppy to algorithms and humans alike.
 
 End of week two, a stranger can find you, understand you, and contact you professionally. Most new businesses never reach this state. You just passed them.

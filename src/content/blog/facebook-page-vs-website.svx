@@ -59,7 +59,7 @@ The argument was never Facebook *versus* website. It's **Facebook *plus* website
 Not a big portal. Not an app. Three things:
 
 1. **A domain.** `yourbusiness.com`. Cheap, yearly, and the foundation for everything else.
-2. **A simple website.** Who you are, what you sell, how to order, how to contact you. One good page beats a Facebook-only presence.
+2. **A [simple website](/website-service).** Who you are, what you sell, how to order, how to contact you. One good page beats a Facebook-only presence.
 3. **A business email on that domain.** Invoices, gateway applications, customer replies. All from `you@yourbusiness.com`, never a Gmail address.
 
 Most businesses get all three live within days, with nothing technical on their end. That's what our [email service](/email-service) covers on the email side. Same no-hassle approach gets the domain and site up.
