@@ -2,7 +2,7 @@
 title: 'Things Every New Business Forgets to Set Up (Domain, Email, Google Profile, SSL)'
 seoTitle: 'New Business Checklist: Domain, Email, Google, SSL'
 description: 'Registered the business? Most owners stop there and miss the four setups that make them findable and trustworthy: domain, business email, Google profile, and site security.'
-date: '2026-09-04'
+date: '2026-08-28'
 tags: ['domain', 'business-email', 'seo']
 author: 'Doomkey'
 draft: false
