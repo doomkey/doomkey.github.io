@@ -149,7 +149,7 @@
 		<div class="flex flex-col items-start gap-4 border-t py-16">
 			<h2>Get started</h2>
 			<p>Sending within a day. Nothing technical on your end. Tell us your domain and we take it from there.</p>
-			<a href="#" role="button" class="primary">Set up my business email</a>
+			<a href={resolve("/contact")} role="button" class="primary">Set up my business email</a>
 		</div>
 	</section>
 </main>

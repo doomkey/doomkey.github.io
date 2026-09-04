@@ -23,7 +23,7 @@
 		}
 	];
 
-	const CONTACT_URL = 'https://www.facebook.com/doomkey.apps';
+	const CONTACT_HREF = '/contact';
 
 	let mobileOpen = $state(false);
 	let servicesOpen = $state(false);
@@ -102,7 +102,7 @@
 					? 'font-semibold text-accent'
 					: ''}">Blog</a
 			>
-			<a href={CONTACT_URL} target="_blank" rel="noreferrer" role="button" class="primary text-sm">
+			<a href={resolve(CONTACT_HREF)} role="button" class="primary text-sm">
 				Get started
 			</a>
 		</nav>
@@ -141,7 +141,7 @@
 				class="mb-4 block no-underline {onBlog ? 'font-semibold text-accent' : ''}"
 				onclick={closeAll}>Blog</a
 			>
-			<a href={CONTACT_URL} target="_blank" rel="noreferrer" role="button" class="primary text-sm">
+			<a href={resolve(CONTACT_HREF)} role="button" class="primary text-sm">
 				Get started
 			</a>
 		</nav>

@@ -169,9 +169,7 @@
 		</ul>
 
 		<div class="dmk-cta-row">
-			<a role="button" href="https://www.facebook.com/doomkey.apps" target="_blank" rel="noreferrer"
-				>Set up my business email</a
-			>
+			<a role="button" href={resolve('/contact')}>Set up my business email</a>
 
 			<a href={resolve('/email-service')} class="outline" role="button"> Learn More </a>
 		</div>

@@ -1,14 +1,10 @@
+<script>
+	import { resolve } from '$app/paths';
+</script>
+
 <section class="flex flex-col" id="contact">
 	<h1>Contact Us</h1>
-	<a
-		class="primary"
-		role="button"
-		href="https://www.facebook.com/doomkey.apps"
-		target="_blank"
-		rel="noreferrer"
-	>
-		Send A Message
-	</a>
+	<a class="primary" role="button" href={resolve('/contact')}> Send A Message </a>
 </section>
 
 <style lang="scss">

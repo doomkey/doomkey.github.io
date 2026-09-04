@@ -23,12 +23,8 @@
 			<p class="m-0 max-w-[38ch] text-caption opacity-80">
 				Apps and services that scale.
 			</p>
-			<a
-				href="https://www.facebook.com/doomkey.apps"
-				target="_blank"
-				rel="noreferrer"
-				role="button"
-				class="primary mt-2 self-start text-sm">Get started</a
+			<a href={resolve('/contact')} role="button" class="primary mt-2 self-start text-sm"
+				>Get started</a
 			>
 		</div>
 		<nav aria-label="Services">

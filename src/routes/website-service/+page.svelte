@@ -1,4 +1,6 @@
 <script>
+	import { resolve } from "$app/paths";
+
 	const canonical = "https://doomkeybd.com/website-service";
 	const title = "Website Service: One Clear Page That Sells | Doomkey";
 	const description =
@@ -148,13 +150,7 @@
 		<div class="flex flex-col items-start gap-4 border-t py-16">
 			<h2>Get started</h2>
 			<p>Live within days. Nothing technical on your end. Tell us about your business and we take it from there.</p>
-			<a
-				href="https://www.facebook.com/doomkey.apps"
-				target="_blank"
-				rel="noreferrer"
-				role="button"
-				class="primary">Get my website</a
-			>
+			<a href={resolve("/contact")} role="button" class="primary">Get my website</a>
 		</div>
 	</section>
 </main>
