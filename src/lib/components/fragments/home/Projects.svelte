@@ -5,6 +5,7 @@
 	import ThumbImgE from '$lib/assets/images/epitome/thumb.png';
 </script>
 
+<div id="projects"></div>
 <section id="epitome">
 	<div>
 		<article class="project">
