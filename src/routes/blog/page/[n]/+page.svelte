@@ -3,13 +3,15 @@
 	import BlogList from '$lib/blog/BlogList.svelte';
 
 	let { data } = $props();
+
+	const canonical = `https://doomkeybd.com/blog/page/${data.page}`;
 </script>
 
 <svelte:head>
-	<title>Blog — Doomkey</title>
+	<title>Blog — page {data.page} — Doomkey</title>
 	<meta name="description" content="Notes from Doomkey on domains, business email, and running a real company online." />
-	<link rel="canonical" href="https://doomkeybd.com/blog" />
-	<link rel="alternate" type="application/rss+xml" title="Doomkey Blog" href={resolve('/blog/rss.xml')} />
+	<meta name="robots" content="noindex, follow" />
+	<link rel="canonical" href={canonical} />
 </svelte:head>
 
 <header>
@@ -29,12 +31,7 @@
 				Doomkey blog
 			</p>
 			<h1 class="m-0 text-balance">Notes on running a real company online</h1>
-			<p class="m-0 text-body-xl">Domains, business email, and the small setups that make a business look established.</p>
-			<p class="m-0">
-				<a class="text-sm text-accent underline underline-offset-[3px]" href={resolve('/blog/rss.xml')}>RSS feed</a>
-				<span class="opacity-60"> · </span>
-				<a class="text-sm text-accent underline underline-offset-[3px]" href={resolve('/blog/tag')}>Browse by tag</a>
-			</p>
+			<p class="m-0 text-body-xl">Page {data.page} of {data.totalPages}.</p>
 		</div>
 	</section>
 

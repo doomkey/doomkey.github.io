@@ -120,6 +120,18 @@ export function postsByTag(tag: string): PostListing[] {
 	return listPosts().filter((p) => p.tags.includes(tag));
 }
 
+export const PAGE_SIZE = 6;
+
+export function totalPages(): number {
+	return Math.max(1, Math.ceil(listPosts().length / PAGE_SIZE));
+}
+
+export function postsForPage(page: number): PostListing[] {
+	if (!Number.isInteger(page) || page < 1 || page > totalPages()) return [];
+	const start = (page - 1) * PAGE_SIZE;
+	return listPosts().slice(start, start + PAGE_SIZE);
+}
+
 export interface TocEntry {
 	id: string;
 	text: string;

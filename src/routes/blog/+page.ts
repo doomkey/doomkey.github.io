@@ -1,7 +1,7 @@
-import { listPosts } from '$lib/blog/posts';
+import { postsForPage, totalPages } from '$lib/blog/posts';
 
 export const prerender = true;
 
 export function load() {
-	return { posts: listPosts() };
+	return { posts: postsForPage(1), page: 1, totalPages: totalPages() };
 }
