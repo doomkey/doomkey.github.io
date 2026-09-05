@@ -122,9 +122,12 @@
 		</button>
 	</div>
 
-	<!-- Mobile panel -->
+	<!-- Mobile panel: absolute overlay so opening it never pushes content down -->
 	{#if mobileOpen}
-		<nav class="border-t border-text/15 px-5 py-4 md:hidden" aria-label="Mobile">
+		<nav
+			class="absolute inset-x-0 top-full z-50 border-y border-text/15 bg-bg px-5 py-4 shadow-xl md:hidden"
+			aria-label="Mobile"
+		>
 			<p class="m-0 mb-2 text-overline font-semibold tracking-[0.12em] text-accent uppercase">
 				Services
 			</p>
