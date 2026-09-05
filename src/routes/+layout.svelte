@@ -3,9 +3,24 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { resolve } from '$app/paths';
+	import { afterNavigate } from '$app/navigation';
+	import { browser } from '$app/environment';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
 
 	let { children } = $props();
+
+	const GA_ID = 'G-2V490YQFTC';
+
+	// Snippet in app.html sets send_page_view: false, so this hook owns every
+	// page_view (including initial load) and client-side navs stay accurate.
+	afterNavigate((nav) => {
+		if (!browser) return;
+		const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+		if (typeof gtag !== 'function') return;
+		gtag('config', GA_ID, {
+			page_path: nav.to?.url.pathname ?? window.location.pathname
+		});
+	});
 </script>
 
 <svelte:head>

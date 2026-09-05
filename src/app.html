@@ -5,14 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Doomkey</title>
 		%sveltekit.head%
+		<!-- Gooslop tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2V490YQFTC"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2V490YQFTC', { send_page_view: false });
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
-		<!-- 100% privacy-first analytics -->
-		<script
-			data-collect-dnt="true"
-			async
-			src="https://scripts.simpleanalyticscdn.com/latest.js"
-		></script>
 	</body>
 </html>
