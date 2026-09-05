@@ -5,6 +5,26 @@ import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
 import rehypePrettyCode from 'rehype-pretty-code';
 
+// mdsvex bundles an old mdast-util-to-hast whose code handler drops `meta`,
+// so fence options like title="..." never reach rehype-pretty-code (it reads
+// element.data.meta or properties.metastring). Smuggle meta through as an
+// hProperty, which to-hast applies to the element properties.
+function remarkCodeMeta() {
+	return (tree) => {
+		const visit = (node) => {
+			if (node.type === 'code' && node.meta) {
+				const data = node.data || {};
+				node.data = {
+					...data,
+					hProperties: { ...(data.hProperties || {}), metastring: node.meta }
+				};
+			}
+			for (const child of node.children || []) visit(child);
+		};
+		visit(tree);
+	};
+}
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
@@ -16,15 +36,19 @@ const config = {
 			// rehype-pretty-code as plain pre>code elements.
 			highlight: false,
 			layout: { blog: new URL('./src/lib/blog/PostLayout.svelte', import.meta.url).pathname },
-			remarkPlugins: [remarkGfm],
+			remarkPlugins: [remarkGfm, remarkCodeMeta],
 			rehypePlugins: [
 				rehypeSlug,
 				[
 					rehypePrettyCode,
-					{
-						theme: 'github-dark',
-						keepBackground: false
-					}
+				{
+					// Rich dark palette (tags/attrs/strings each distinct)
+					// so code reads as colored, not two-hue.
+					theme: 'dracula',
+					// Let shiki paint its own background so the palette
+					// renders as designed instead of on our purple override.
+					keepBackground: true
+				}
 				]
 			]
 		})

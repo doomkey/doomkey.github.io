@@ -40,8 +40,7 @@ If you get a handful of enquiries a day, free wins. If you're drowning in hundre
 
 Open the page where the form should appear and paste this. Change the email to yours:
 
-```html
-<form method="POST" action="https://formsubmit.co/you@example.com">
+```html title="contact.html"
   <label>
     Your name
     <input type="text" name="name" required />
@@ -67,8 +66,7 @@ That's a working form. Three fields, each labeled so buyers (and Google) underst
 
 Paste these lines inside the form, anywhere before the button. Each one does exactly one job:
 
-```html
-<input type="hidden" name="_subject" value="New enquiry from my website" />
+```html title="form-settings.html"
 <input type="hidden" name="_template" value="table" />
 <input type="hidden" name="_captcha" value="true" />
 <input type="text" name="_honey" style="display:none" />
