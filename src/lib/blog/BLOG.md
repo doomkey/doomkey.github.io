@@ -54,8 +54,10 @@ When brainstorming, sort ideas into one of these categories. This is also the fa
    _e.g. "How Much Does It Cost to Set Up a Business Domain and Email?"_
 8. **Partner / channel content** - aimed at freelancers and agencies who could resell or refer us
    _e.g. "How to Pitch Website and Email Setup as an Add-On Service"_
+9. **Tutorial / hands-on guides** - step-by-step build or styling walkthroughs for semi-technical readers (a step beyond plain-language how-tos; code snippets and settings allowed, each explained in plain words)
+   _e.g. "Your Website Has No Contact Form. Fix It Free in 15 Minutes", "How to Style Articles So Buyers Actually Read Them"_
 
-A healthy content calendar has a mix across all eight - leaning on awareness/checklist content for volume and top-of-funnel traffic, with regular bottom-of-funnel and vertical posts mixed in.
+A healthy content calendar has a mix across all nine - leaning on awareness/checklist content for volume and top-of-funnel traffic, with regular bottom-of-funnel and vertical posts mixed in.
 
 ---
 
@@ -77,6 +79,17 @@ Doomkey's voice is **direct, plain, and a little blunt about the problem** - nev
 - Don't bury the point - get to the problem in the first two sentences
 
 **Reference tone samples:** the cold email copy and the "A Gmail address makes a real business look unfinished" landing page are the canonical voice reference. When in doubt, match that.
+
+### 4b. Rhythm & Readability
+
+Good sentences aren't enough. The *rhythm* has to sound like a person talking, not a brochure. Apply this on every draft:
+
+- **Mix short and long.** A paragraph of identical-length sentences reads flat no matter how good the words are. Follow a long explainer with a punch. ("Nothing is broken. That's the problem.")
+- **Commas and periods first.** Prefer them over dashes, colons, and semicolons. One em dash per article is plenty; zero is usually better.
+- **Cut stiff transitions.** No furthermore, moreover, in conclusion, or "it is worth noting." Say the thing directly, or join plainly: also, and, but, so.
+- **Plain word wins.** Key over pivotal. Mix over tapestry. Explore over delve. If a simpler word exists, use it.
+- **Vary sentence openers.** No two sentences in a row should start the same way.
+- **Read it aloud once.** Any sentence you wouldn't say to a shop owner across a counter gets rewritten.
 
 ---
 
@@ -166,6 +179,7 @@ This prevents two common failure modes: writing the same vertical twice, and end
 - [ ] Opens with the problem in the first 2–3 sentences
 - [ ] Maps clearly to one or more of the three pillars (website / SEO / email)
 - [ ] Matches Doomkey's plain, direct voice (no marketing filler, no unexplained jargon)
+- [ ] Rhythm check: sentences vary in length, no stiff transitions, no dash-heavy clauses
 - [ ] Has one primary keyword used in title, intro, an H2, and meta description
 - [ ] Includes at least one internal link to a Doomkey service/landing page
 - [ ] Ends with a clear, low-pressure CTA
