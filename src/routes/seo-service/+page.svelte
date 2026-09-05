@@ -33,7 +33,7 @@
 			<h1>When buyers ask AI who to trust, make sure it's you.</h1>
 			<p>
 				Search changed. Buyers still Google, but now they also ask ChatGPT, Gemini, and
-				AI Overviews: "best tailor near me," "trusted cake shop Dhanmondi." Those answers
+				AI Overviews: "best tailor near me," "trusted cake shop Banani." Those answers
 				come from business profiles, reviews, and facts machines can read. We set all of
 				it up, so humans and AI both recommend you.
 			</p>

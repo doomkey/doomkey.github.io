@@ -12,7 +12,7 @@ draft: false
 
 Go ahead. Open Google, type your shop's name, and look at what comes back. If you only exist on social media, the result is usually one of three things: your Facebook page and nothing else, a competitor with a similar name, or a blank page of unrelated results.
 
-That blank space is where your next customers are looking. Every day, people near you search for what you sell. "Tailor near me." "Birthday cake order online." "Mobile servicing Dhanmondi." Google answers those searches with websites and map listings. Facebook pages barely register. So the work starts with understanding one thing: Google can't recommend what it can't see.
+That blank space is where your next customers are looking. Every day, people near you search for what you sell. "Tailor near me." "Birthday cake order online." "Mobile servicing Mirpur." Google answers those searches with websites and map listings. Facebook pages barely register. So the work starts with understanding one thing: Google can't recommend what it can't see.
 
 ## Why Facebook pages are invisible to Google
 
