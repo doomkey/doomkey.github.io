@@ -1,0 +1,104 @@
+---
+title: 'Your Website Has No Contact Form. Fix It Free in 15 Minutes.'
+seoTitle: 'Free Contact Form for Website: 15-Minute Setup'
+description: 'No contact form means lost enquiries. Set up a free contact form for your website with FormSubmit in 15 minutes. No backend, no monthly cost.'
+date: '2026-09-05'
+tags: ['website']
+author: 'Doomkey'
+draft: false
+---
+
+## Every visitor who can't message you is a sale walking away
+
+Your site looks good. Products listed. Prices clear. But there's no way to reach you except a phone number nobody wants to call. So visitors leave, message a competitor on Facebook instead, and never come back.
+
+A contact form fixes this. And no, it doesn't need a backend server, monthly hosting fees, or a developer on retainer. Fifteen minutes, one HTML snippet, zero cost. Here's exactly how.
+
+## Why a missing form costs more than you think
+
+Think about how buyers behave. They browse at midnight. They compare three sellers. They have one question before ordering. If answering means finding your number, opening WhatsApp, and starting a conversation with a stranger, most won't bother. A form lets them ask in ten seconds and leave. You reply in the morning. Sale saved.
+
+The alternative most owners assume is hiring someone to "build a backend." That means server hosting, spam protection, and maintenance bills, all so a few messages a week can reach your inbox. For a small business, that's backwards. The messages should cost nothing. The setup should take minutes.
+
+## The trick: let a free service deliver the mail
+
+Your website is static. It shows pages but can't process anything, which is why forms usually need a backend. FormSubmit removes that need. Your form sends messages to their service. They forward each one to your inbox. Free tier, no account needed to start.
+
+Honest comparison before we begin:
+
+| You need...              | Paid backend | FormSubmit free |
+| ------------------------ | ------------ | --------------- |
+| Receive form messages    | Yes          | Yes             |
+| Monthly hosting cost     | Yes          | No              |
+| Spam protection          | Build it     | Built in        |
+| Setup time               | Days         | 15 minutes      |
+| Sends thousands monthly  | Yes          | No (limits apply) |
+
+If you get a handful of enquiries a day, free wins. If you're drowning in hundreds, that's a good problem, and a backend becomes worth paying for. Most small businesses never outgrow free.
+
+## Step 1: write the plain form
+
+Open the page where the form should appear and paste this. Change the email to yours:
+
+```html
+<form method="POST" action="https://formsubmit.co/you@example.com">
+  <label>
+    Your name
+    <input type="text" name="name" required />
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required />
+  </label>
+
+  <label>
+    Message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <button type="submit">Send message</button>
+</form>
+```
+
+That's a working form. Three fields, each labeled so buyers (and Google) understand them. The `required` bits stop empty submissions. The `type="email"` bit checks the address looks real before sending.
+
+## Step 2: add the hidden settings
+
+Paste these lines inside the form, anywhere before the button. Each one does exactly one job:
+
+```html
+<input type="hidden" name="_subject" value="New enquiry from my website" />
+<input type="hidden" name="_template" value="table" />
+<input type="hidden" name="_captcha" value="true" />
+<input type="text" name="_honey" style="display:none" />
+<input type="hidden" name="_next" value="https://yourbusiness.com/thanks" />
+```
+
+Line by line, in plain words:
+
+- **Subject.** Names the email so you spot enquiries instantly in a busy inbox.
+- **Template.** Sends the message as a neat table instead of a messy blob.
+- **Captcha.** Blocks bots. Real buyers barely notice it.
+- **Honeypot.** An invisible trap field. Humans never see it; bots fill it in and get silently rejected. Free spam filtering.
+- **Thank-you redirect.** Where buyers land after sending. Make a simple thanks page so they know it worked. Point it at your real address, starting with `https`.
+
+## Step 3: click the activation email (don't skip this)
+
+First submission triggers a confirmation email to your inbox. Click it. Until you do, nothing gets delivered. This is the step everyone misses, then concludes "it doesn't work." It works. Confirm first.
+
+After that, test it yourself: fill the form, send, check the inbox and the thanks page. Two minutes that prevent embarrassment later.
+
+## Step 4 (optional): hide your email address
+
+The basic setup shows your address in the page source. Anyone reading the code sees it. If that bothers you, FormSubmit offers an endpoint code: a random string that replaces the address in the `action` attribute. Same form, same inbox, address stays private. You'll find the string in the activation email they send your inbox. Swap it in and the address never appears in your page source.
+
+## Know the limits before you depend on it
+
+Free means limits. Monthly caps apply, so a viral week could pause delivery. Their branding appears on some flows. And you're trusting a third party with every enquiry, which is fine at small scale and worth revisiting as you grow. When messages become revenue-critical volume, a proper backend earns its keep. Until then, free is the smart money.
+
+## Where Doomkey fits
+
+Every site we build ships with exactly this: a working contact form, spam protection on, thank-you page included, tested before handover. No backend bills, nothing for you to maintain. It's part of our [website service](/website-service), live within days along with the rest of the page.
+
+Need the whole setup, not just the form? Tell us about your business through our [contact page](/contact). We reply within a day.
