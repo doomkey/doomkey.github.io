@@ -55,3 +55,8 @@ jobs:
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: 🔔 Ping Google to recrawl
+        run: >
+          curl -sS -o /dev/null -w "%{http_code}\n" --retry 3 --max-time 30
+          "https://www.google.com/ping?sitemap=https://doomkeybd.com/sitemap.xml" || true
