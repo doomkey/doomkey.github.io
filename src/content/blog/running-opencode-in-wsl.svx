@@ -1,0 +1,108 @@
+---
+title: 'Running OpenCode in WSL: From Zero to TUI'
+seoTitle: 'Run OpenCode in WSL on Windows: Setup Guide'
+description: 'Set up OpenCode inside Windows Subsystem for Linux from scratch. Install WSL, install OpenCode, open your project, and verify the TUI works.'
+date: '2026-09-08'
+tags: ['guide', 'tools']
+author: 'Doomkey'
+draft: false
+---
+
+## You will end with OpenCode running in WSL
+
+Fresh Windows PC, no setup yet. At the end, you type `opencode` in a Linux terminal on Windows and the interactive TUI opens on your project. Takes about 15 minutes, most of it waiting on installs.
+
+## Why WSL and not native Windows
+
+OpenCode runs directly on Windows, but the docs recommend [Windows Subsystem for Linux (WSL)](https://opencode.ai/docs/windows-wsl/) for the best experience. WSL is a real Linux environment inside Windows. That means faster file access, full terminal support, and tools that expect Linux just work.
+
+Rule of thumb: if you are on Windows, do your OpenCode work in WSL. Use native Windows only when you have a reason.
+
+## Prerequisites
+
+- Windows 10 or 11 with admin rights (one restart may be needed)
+- A project folder path noted down, e.g. `C:\Users\You\project`
+- PowerShell for step 1, then everything happens in the Linux terminal
+
+No OpenCode installed yet. That is the point.
+
+## Step 1: install WSL with Ubuntu
+
+Open PowerShell and follow the [official Microsoft WSL install guide](https://learn.microsoft.com/en-us/windows/wsl/install). The short version:
+
+```powershell
+wsl --install
+```
+
+Plain words: this turns on the Linux layer and installs Ubuntu, the default Linux system. Restart if it asks. Then open the new "Ubuntu" app from the Start menu and create your Linux username and password.
+
+Verify you are in Linux:
+
+```sh
+uname -a
+```
+
+You should see `Linux` and `microsoft` in the output. That means you are inside WSL, not PowerShell anymore.
+
+## Step 2: install OpenCode inside WSL
+
+In the Ubuntu terminal, run the [install method from the docs](https://opencode.ai/docs/windows-wsl/#setup):
+
+```sh
+curl -fsSL https://opencode.ai/install | bash
+```
+
+Plain words: this downloads the installer and puts the `opencode` command on your Linux path. Run it inside WSL, not in PowerShell.
+
+Verify the binary exists:
+
+```sh
+opencode --version
+```
+
+You should see a version number. If the shell says command not found, close the Ubuntu terminal, reopen it, and try again.
+
+## Step 3: open your project from WSL
+
+WSL sees your Windows drives under `/mnt/`. Your `C:` drive is `/mnt/c/`, `D:` is `/mnt/d/`, and so on ([accessing Windows files](https://opencode.ai/docs/windows-wsl/#accessing-windows-files)).
+
+Go to your project and start OpenCode:
+
+```sh
+cd /mnt/c/Users/You/project
+opencode
+```
+
+Plain words: the first line moves into your Windows project from inside Linux. The second line starts the interactive TUI there.
+
+Type `/help` once it opens. If the command list appears, the setup works.
+
+## Step 4 (faster): keep big repos inside Linux
+
+Step 3 works, but projects on `/mnt/c/` can feel slow on large repos. The docs tip: clone or copy the repo into the WSL filesystem, e.g. under `~/code/`, and run OpenCode there.
+
+```sh
+mkdir -p ~/code
+cp -r /mnt/c/Users/You/project ~/code/project
+cd ~/code/project
+opencode
+```
+
+Plain words: you make a home for code inside Linux, copy the project once, and work there. Git, file watching, and agents all run faster. Sync back to Windows only when you need to.
+
+## Step 5: verify it sticks
+
+1. `opencode --version` prints a version in the Ubuntu terminal
+2. `opencode` opens the TUI in your project folder
+3. `/help` lists commands inside the TUI
+4. Your sessions live inside WSL at `~/.local/share/opencode/` ([tips](https://opencode.ai/docs/windows-wsl/#tips)), so reopening Ubuntu keeps your history
+
+If all four pass, you are done. Pin the Ubuntu app to your taskbar. That is your OpenCode terminal from now on.
+
+## Troubleshooting
+
+- **Ubuntu app missing after install?** Reboot Windows, then run `wsl --list --verbose` in PowerShell. You should see Ubuntu. If not, rerun `wsl --install`.
+- **`opencode: command not found`?** You installed in the wrong shell or the path did not reload. Install inside the Ubuntu terminal, then close and reopen it.
+- **TUI looks broken?** You launched from PowerShell or CMD. Launch from the Ubuntu terminal instead. WSL gives full terminal support, native Windows often does not.
+- **Slow on big projects?** Move the repo into `~/code/` per step 4. Working across `/mnt/c/` is convenient but slower.
+- **Config or sessions missing?** You are looking in Windows. OpenCode config and sessions live inside the WSL environment, not in your Windows user folder. Check from Ubuntu with `ls ~/.local/share/opencode/`.

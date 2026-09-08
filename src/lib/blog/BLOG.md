@@ -16,19 +16,20 @@ Our reader is a **business owner, not a developer**. They run a real business - 
 
 They are **not** reading our blog for deep technical SEO theory or web-dev tutorials. They're reading because something made them realize their setup looks unfinished, and they want to know what to do about it - ideally ending on our page as the "just do it for me" option.
 
-**Write for this reader by default.** If an idea only makes sense to a developer or a marketing professional, it's probably not a Doomkey blog post.
+**Write for this reader by default (Track A).** We also publish **Track B: builder tutorials** for semi-technical readers and developers - freelancers, shop owners who tinker, devs curious how we work. Track B teaches one hands-on thing with code and settings allowed, each step explained in plain words. Mark Track B with a `guide` or `tools` tag so the two tracks stay distinguishable. If an idea fits neither a business owner nor a builder doing real work, it's probably not a Doomkey blog post.
 
 ---
 
-## 2. What We Write About: The Three Content Pillars
+## 2. What We Write About: Content Pillars + Builder Track
 
-Every article should map to one (or more) of these three service pillars, because every article should be able to plausibly end with a Doomkey CTA.
+Track A articles should map to one (or more) of these three service pillars. Most can end with a Doomkey CTA, but the tie-in stays optional — skip it when forced.
 
-| Pillar | Covers | Example angle |
-|---|---|---|
-| **Website** | Having no website, having an outdated one, marketplace vs. owned site | "Why your Facebook Shop isn't enough anymore" |
-| **SEO** | Getting found on Google, local SEO, plain-language SEO basics | "Why Google can't find your business" |
-| **Business Email** | Gmail vs. branded email, trust, verification requirements | "Gmail vs Business Email: What Customers Actually Notice" |
+| Pillar                         | Covers                                                                      | Example angle                                             |
+| ------------------------------ | --------------------------------------------------------------------------- | --------------------------------------------------------- |
+| **Website**                    | Having no website, having an outdated one, marketplace vs. owned site       | "Why your Facebook Shop isn't enough anymore"             |
+| **SEO**                        | Getting found on Google, local SEO, plain-language SEO basics               | "Why Google can't find your business"                     |
+| **Business Email**             | Gmail vs. branded email, trust, verification requirements                   | "Gmail vs Business Email: What Customers Actually Notice" |
+| **Build notes (Track B only)** | Tooling and techniques behind our work: site setup, automation, AI workflow | "How to Create a Custom Command for OpenCode"             |
 
 Many of our best articles **combine two or three pillars** - e.g., "Things Every New Business Forgets to Set Up" touches domain, website, and email together. Combined articles tend to convert better because they mirror the actual bundled problem Doomkey solves - don't feel like every post has to pick just one pillar.
 
@@ -56,8 +57,10 @@ When brainstorming, sort ideas into one of these categories. This is also the fa
    _e.g. "How to Pitch Website and Email Setup as an Add-On Service"_
 9. **Tutorial / hands-on guides** - step-by-step build or styling walkthroughs for semi-technical readers (a step beyond plain-language how-tos; code snippets and settings allowed, each explained in plain words)
    _e.g. "Your Website Has No Contact Form. Fix It Free in 15 Minutes", "How to Style Articles So Buyers Actually Read Them"_
+10. **Builder / tooling tutorial (Track B)** - same hands-on rules as 9 but for developer tooling with no pillar or CTA required. Must state prerequisites, show full working snippets, and include a verify step.
+    _e.g. "How to Create a Custom Command for OpenCode", "How We Lint Svelte Before Every Commit"_
 
-A healthy content calendar has a mix across all nine - leaning on awareness/checklist content for volume and top-of-funnel traffic, with regular bottom-of-funnel and vertical posts mixed in.
+A healthy content calendar has a mix across all ten - leaning on awareness/checklist content for volume and top-of-funnel traffic, with regular bottom-of-funnel, vertical, and builder posts mixed in. Keep Track B to roughly one in four posts so the blog stays owner-first.
 
 ---
 
@@ -66,6 +69,7 @@ A healthy content calendar has a mix across all nine - leaning on awareness/chec
 Doomkey's voice is **direct, plain, and a little blunt about the problem** - never jargon-heavy, never salesy-corporate. Think of how you'd explain this to a shop owner in person, not how a marketing agency would write a case study.
 
 **Do:**
+
 - Open with the specific, recognizable problem ("your customer emails still go to a Gmail address")
 - Use short sentences and everyday words
 - Name concrete consequences (lost trust, failed verification, blocked marketplace approval) instead of vague benefits ("boost your brand")
@@ -73,16 +77,17 @@ Doomkey's voice is **direct, plain, and a little blunt about the problem** - nev
 - Be honest about tradeoffs - don't oversell
 
 **Don't:**
+
 - Don't use marketing filler ("unlock your business's true potential")
-- Don't get technical (no explaining DNS, MX records, DKIM etc. in reader-facing copy - that's for us, not them)
+- Don't get technical in Track A (no explaining DNS, MX records, DKIM etc. in reader-facing copy - that's for us, not them). Track B may go technical but must explain every snippet in plain words first.
 - Don't write generic "10 SEO tips" listicles that could belong to any SEO agency - every article should sound like it could only be Doomkey's, because it ties back to the specific pain point of an incomplete setup
-- Don't bury the point - get to the problem in the first two sentences
+- Don't bury the point - get to the problem in the first two sentences (Track B: get to the working result in the first three)
 
 **Reference tone samples:** the cold email copy and the "A Gmail address makes a real business look unfinished" landing page are the canonical voice reference. When in doubt, match that.
 
 ### 4b. Rhythm & Readability
 
-Good sentences aren't enough. The *rhythm* has to sound like a person talking, not a brochure. Apply this on every draft:
+Good sentences aren't enough. The _rhythm_ has to sound like a person talking, not a brochure. Apply this on every draft:
 
 - **Mix short and long.** A paragraph of identical-length sentences reads flat no matter how good the words are. Follow a long explainer with a punch. ("Nothing is broken. That's the problem.")
 - **Commas and periods first.** Prefer them over dashes, colons, and semicolons. One em dash per article is plenty; zero is usually better.
@@ -102,10 +107,19 @@ Use this as the default skeleton. Not every section is mandatory, but this order
 3. **Why it matters** - concrete consequences: lost trust, lost sales, failed verification, invisible on Google
 4. **The specific gap** - what exactly is missing or broken (no domain, no branded email, no SEO basics)
 5. **What to do about it** - practical, non-technical steps the reader could theoretically take themselves
-6. **Where Doomkey fits** - one short, non-pushy paragraph: this is what we set up, and it's handled for you
-7. **CTA** - link to the relevant service/landing page ("Set up my business email" / "Get a website" / "Talk to us")
+6. **Where Doomkey fits (optional)** - one short, non-pushy paragraph when the tie-in is natural: this is what we set up, and it's handled for you. Skip it when forced; a clean ending beats a shoehorned pitch.
+7. **CTA (optional)** - link to the relevant service/landing page ("Set up my business email" / "Get a website" / "Talk to us"). Required for bottom-of-funnel posts, optional elsewhere.
 
-Keep articles **600–1000 words** for most categories. Checklist and "plain language guide" pieces can run longer (1000–1500 words) since they're doing more teaching. Bottom-of-funnel/pricing pieces can be shorter and more direct (400–700 words).
+Keep articles **600–1000 words** for most categories. Checklist and "plain language guide" pieces can run longer (1000–1500 words) since they're doing more teaching. Bottom-of-funnel/pricing pieces can be shorter and more direct (400–700 words). Track B tutorials run 800–1500 words and must stay reproducible over being short.
+
+### 5b. Builder Tutorial Structure (Track B only)
+
+1. **Result first** - what the reader will have working at the end, in one sentence
+2. **Prerequisites** - exact tools, versions, file paths assumed
+3. **Steps** - numbered, one action each, full snippets not fragments
+4. **Verify** - the command or check that proves it works
+5. **Troubleshoot** - the 2–4 failures readers will actually hit
+6. **Close** - optional Doomkey tie-in only if natural (e.g. "this is how we ship sites faster"); no forced CTA
 
 ---
 
@@ -134,7 +148,7 @@ We're writing for humans first, but every post should be structured to actually 
 - **2–4 secondary keywords**, used naturally in subheadings and body copy - never stuffed
 - **Meta description**: 1–2 sentences, plain language, states the specific problem + implies the solution
 - **Headings (H2/H3)**: should be able to stand alone as a mini table-of-contents - someone skimming just the headings should understand the article's argument
-- **Internal links**: every article links to at least one relevant Doomkey service/landing page, and where relevant, to 1–2 other blog posts (e.g. a vertical post links back to "Gmail vs Business Email")
+- **Internal links**: every Track A article links to at least one relevant Doomkey service/landing page, and where relevant, to 1–2 other blog posts (e.g. a vertical post links back to "Gmail vs Business Email"). Track B links to docs or repo paths instead where no service page fits.
 - **Avoid keyword-stuffing industry jargon** - write for the plain-language version of a search query ("why can't customers find my business on google"), not the technical version ("local SEO NAP consistency schema markup")
 
 ---
@@ -151,7 +165,7 @@ When the calendar is running low, work through these prompts in order - they alm
 5. **Take a competitor or alternative approach and write the honest comparison** - "self-hosted email vs. business email service," "building your own site vs. hiring someone," "Daraz vs. your own store." These often become strong bottom-of-funnel pieces.
 6. **Seasonal/milestone triggers** - new business registration seasons, e-commerce peak seasons (Eid, year-end sales) where an unprofessional setup costs the most.
 
-A good idea should pass this test: **could you write the last paragraph as a natural Doomkey CTA without it feeling forced?** If not, the topic is probably too broad or off-pillar - narrow it back to one of the three pillars.
+A good Track A idea should pass one of these tests: **could you write the last paragraph as a natural Doomkey CTA without it feeling forced?** If yes, include it. If not, the post can still stand alone — just narrow it back to one of the three pillars and end cleanly. A good Track B idea passes a different test: **can the reader follow it end-to-end and verify the result in under 20 minutes?** If not, cut scope until they can.
 
 ---
 
@@ -159,15 +173,16 @@ A good idea should pass this test: **could you write the last paragraph as a nat
 
 Keep a running table (in the CSV or wherever the team tracks status) with at minimum:
 
-| Column | Purpose |
-|---|---|
-| Title | Final or working title |
-| Pillar(s) | Website / SEO / Email (one or more) |
-| Category | From Section 3's list of 8 |
-| Industry (if vertical) | So we don't duplicate an industry |
-| Primary keyword | For SEO tracking |
-| Status | Idea / Drafting / Review / Published |
-| Published URL | Once live |
+| Column                 | Purpose                                               |
+| ---------------------- | ----------------------------------------------------- |
+| Title                  | Final or working title                                |
+| Audience               | Owner (Track A) / Builder (Track B)                   |
+| Pillar(s)              | Website / SEO / Email, or Build notes (Track B) / N/A |
+| Category               | From Section 3's list                                 |
+| Industry (if vertical) | So we don't duplicate an industry                     |
+| Primary keyword        | For SEO tracking                                      |
+| Status                 | Idea / Drafting / Review / Published                  |
+| Published URL          | Once live                                             |
 
 This prevents two common failure modes: writing the same vertical twice, and ending up with 15 awareness posts and zero bottom-of-funnel posts.
 
@@ -175,12 +190,22 @@ This prevents two common failure modes: writing the same vertical twice, and end
 
 ## 10. Quick Reference Checklist Before Publishing
 
+Track A (owner):
+
 - [ ] Headline names a specific, recognizable problem (not a vague topic)
 - [ ] Opens with the problem in the first 2–3 sentences
 - [ ] Maps clearly to one or more of the three pillars (website / SEO / email)
 - [ ] Matches Doomkey's plain, direct voice (no marketing filler, no unexplained jargon)
 - [ ] Rhythm check: sentences vary in length, no stiff transitions, no dash-heavy clauses
 - [ ] Has one primary keyword used in title, intro, an H2, and meta description
-- [ ] Includes at least one internal link to a Doomkey service/landing page
-- [ ] Ends with a clear, low-pressure CTA
-- [ ] Added to the content tracking table with correct pillar/category/industry tags
+- [ ] Includes at least one internal link (service/landing page for Track A when one fits, otherwise another blog post or docs page)
+- [ ] Ends cleanly: CTA required for bottom-of-funnel posts, otherwise a Doomkey tie-in only when natural — no forced pitch
+- [ ] Added to the content tracking table with correct audience/pillar/category/industry tags
+
+Track B (builder tutorial):
+
+- [ ] Result stated in the first three sentences, prerequisites listed
+- [ ] Every snippet complete and tested; verify step included
+- [ ] Jargon explained in plain words on first use
+- [ ] Primary keyword in title, intro, an H2, and meta description
+- [ ] Added to the content tracking table as Builder with `guide`/`tools` tag

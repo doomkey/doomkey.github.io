@@ -1,0 +1,154 @@
+---
+title: 'How to Create a Custom Command for OpenCode'
+seoTitle: 'OpenCode Custom Commands: Beginner Guide with /ship Example'
+description: 'Create a custom command for OpenCode with one Markdown file. Filename, description, template, and $ARGUMENTS explained with the /ship command as reference.'
+date: '2026-09-08'
+tags: ['guide', 'tools']
+author: 'Doomkey'
+draft: false
+---
+
+## You will end with a working /test command
+
+You repeat yourself in chat: same test instructions, same git steps, every day. A custom command saves that prompt under a slash name. You will build `/test`, then see the pattern in a real example. Takes about 5 minutes.
+
+## Meet /ship in 30 seconds
+
+`/ship` is our running example. It turns messy git output into clean commits.
+
+You type:
+
+```sh
+/ship
+/ship push
+```
+
+It does:
+
+- Reads `git status --short`, `git diff --stat`, `git log --oneline -10`
+- Groups changed files by concern (feature, fix, docs)
+- Commits each group with a short lowercase message
+- Only runs `git push` when you add `push`
+
+It ends with proof:
+
+```sh
+a1b2c3d locations (3 files)
+Tree: clean
+Pushed: no
+```
+
+No slash file, no shortcut. With the file, one line replaces five manual steps. Next you will see the file behind it.
+
+## Prerequisites
+
+- OpenCode installed and opening in TUI mode
+- A project folder (any repo works)
+- 2 minutes after each edit to quit and restart OpenCode (config loads at startup, no hot-reload)
+
+No agent setup needed. If you omit the `agent` field, the command runs in your current agent. That is what you want here.
+
+## Step 1: pick global vs. project scope
+
+Two folders, same format ([Commands](https://opencode.ai/docs/commands/) + [Config locations](https://opencode.ai/docs/config/#locations)):
+
+- **Global:** available in every project, personal workflows
+- **Project:** `.opencode/commands/` in your repo root, checked into git, shared with your team
+
+Global path per OS ([Troubleshooting](https://opencode.ai/docs/troubleshooting/) uses the same pattern for config and plugins, `commands/` follows it):
+
+| OS              | Global commands folder                                              |
+| --------------- | ------------------------------------------------------------------- |
+| macOS / Linux   | `~/.config/opencode/commands/` (`~` = `/Users/you` or `/home/you`)  |
+| Windows native  | `%USERPROFILE%\.config\opencode\commands\` (`C:\Users\You\.config\opencode\commands\`) |
+| Windows via WSL | `~/.config/opencode/commands/` **inside WSL** ([run OpenCode in WSL](https://opencode.ai/docs/windows-wsl/)) |
+
+Filename becomes command name. `ship.md` gives `/ship`. `test.md` gives `/test`.
+
+Use project scope below so the example stays inside your repo.
+
+## Step 2: dissect the file behind /ship
+
+`/ship` is not built-in. It is a plain file. This is the beginner version (full version adds an agent, skipped here):
+
+```md
+---
+description: Bundle working tree into short commits (add "push" to also push)
+---
+
+Inspect the working tree with `git status --short`, `git diff --stat`, and
+`git log --oneline -10`. Bundle changes by concern and commit each bundle with
+a short lowercase message (≤50 chars) matching the repo's existing style.
+
+Arguments: $ARGUMENTS. If arguments contain the word `push`, `git push`
+afterwards (never force). Otherwise stop after committing.
+
+End with `git status --short` proof.
+```
+
+Three pieces ([Commands](https://opencode.ai/docs/commands/#create-command-files)):
+
+1. **Filename** `ship.md` — stored in your global commands folder (table above), this is what makes `/ship` exist
+2. **Frontmatter `description`** — one sentence shown in TUI autocomplete
+3. **Body = template** — the prompt OpenCode runs. `$ARGUMENTS` is whatever you type after `/ship`, so `/ship push` passes `push` into the template and triggers the push branch above.
+
+Advanced versions add `agent:` and `subtask:` to run as a background subagent. Skip both for your first commands.
+
+## Step 3: create your /test command
+
+Create `.opencode/commands/test.md`:
+
+```md
+---
+description: Run tests with coverage
+---
+
+Run the full test suite with coverage report and show any failures.
+Focus on the failing tests and suggest fixes.
+```
+
+That is a complete command. Description plus plain-English prompt, nothing else.
+
+## Step 4: accept input with $ARGUMENTS
+
+Static prompts get old fast. `$ARGUMENTS` makes one file reusable.
+
+Create `.opencode/commands/component.md`:
+
+```md
+---
+description: Create a new component
+---
+
+Create a new React component named $ARGUMENTS with TypeScript support.
+Include proper typing and basic structure.
+```
+
+Run `/component Button` and `$ARGUMENTS` becomes `Button`.
+
+Same idea, for later ([Arguments](https://opencode.ai/docs/commands/#arguments), [Shell output](https://opencode.ai/docs/commands/#shell-output), [File references](https://opencode.ai/docs/commands/#file-references)):
+
+- `$1`, `$2`, `$3` pull positional words (`$1` is the first word after the command)
+- `` !`command` `` pastes shell output into the prompt, e.g. `` !`git log --oneline -10` ``
+- `@path/to/file` includes a file, e.g. `Review @src/components/Button.tsx`
+
+Start with `$ARGUMENTS`. Add the rest only when you hit its limit.
+
+## Step 5: verify it works
+
+1. Quit and restart OpenCode
+2. Type `/` in the TUI — `/test` and `/component` should appear with their descriptions
+3. Run `/test` — output should follow your template wording
+4. Run `/component Button` — result should mention `Button` by name
+
+If the names do not appear, the files are in the wrong folder or misnamed. Filenames must be lowercase letters, numbers, and hyphens, ending in `.md`.
+
+## Troubleshooting
+
+- **Command missing after save?** You edited but did not restart. OpenCode reads commands once at startup.
+- **Template ignored?** Only text below the second `---` runs as prompt ([the body becomes the template](https://opencode.ai/docs/commands/#create-command-files)). Frontmatter never runs.
+- **Wrong scope?** Check the right folder for your OS:
+  - macOS / Linux: `ls ~/.config/opencode/commands/` for global, `ls .opencode/commands/` for project
+  - Windows native (PowerShell): `dir "$env:USERPROFILE\.config\opencode\commands\"`
+  - Windows via WSL: `ls ~/.config/opencode/commands/` inside WSL
+- **Want JSON instead?** Same fields work inline in `opencode.json` under `"command": { "test": { "template": "...", "description": "..." } }` ([JSON config](https://opencode.ai/docs/commands/#json)). Markdown files are easier to edit, so prefer them ([Markdown files](https://opencode.ai/docs/commands/#markdown)).
